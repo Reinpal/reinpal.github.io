@@ -1,10 +1,10 @@
 # Site settings
-title: Your awesome title
-email: your-email@domain.com
+title: Stefan Reinprecht
+email: hello@stefanreinprecht.at
 description: > # The Portfolio-Site of Stefan Reinprecht. 
   Currently studying Informationdesign at FH Joanneum in Graz and
   looking for an Internship. 
-baseurl: "http://reinpal.github.io" # the subpath of your site, e.g. /blog/
+baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://reinpal.github.io" # the base hostname & protocol for your site
 twitter_username: reinpal
 github_username:  reinpal
