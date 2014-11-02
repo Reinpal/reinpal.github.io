@@ -2,12 +2,28 @@
 title: Your awesome title
 email: your-email@domain.com
 description: > # The Portfolio-Site of Stefan Reinprecht. 
-Currently studying Informationdesign at FH Joanneum in Graz and
-looking for an Internship. 
-baseurl: "" # the subpath of your site, e.g. /blog/
+  Currently studying Informationdesign at FH Joanneum in Graz and
+  looking for an Internship. 
+baseurl: "http://reinpal.github.io" # the subpath of your site, e.g. /blog/
 url: "http://reinpal.github.io" # the base hostname & protocol for your site
 twitter_username: reinpal
 github_username:  reinpal
 
 # Build settings
 markdown: kramdown
+
+sass:
+  sass_dir: scss
+
+exclude: [
+  .gitignore,
+  .DS_Store,
+  CNAME,
+  svg,
+  scss,
+  .sass-cache,
+  package.json,
+  Gruntfile.js,
+  node_modules,
+  README.md
+]
