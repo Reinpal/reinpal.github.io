@@ -9,6 +9,8 @@ url: "http://reinpal.github.io" # the base hostname & protocol for your site
 twitter_username: reinpal
 github_username:  reinpal
 
+highlighter: pygments
+
 # Build settings
 markdown: kramdown
 
