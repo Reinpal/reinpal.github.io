@@ -5,6 +5,19 @@
 @import "_syntax-highlighting";
 
 @import "breakpoint";
+
 @import "susy";
 
+$susy: (
+	columns: 12,
+	global-box-sizing: border-box
+);
+
+@include border-box-sizing;
+
+@import "_variables";
 @import "_toolbox";
+@import "_typography";
+@import "_header";
+@import "_layout";
+@import "_footer";

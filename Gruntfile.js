@@ -9,6 +9,9 @@ module.exports = function(grunt) {
 
     uglify: {
       global: {
+        options: {
+          preserveComments: false
+        },
         files: {
           "js/site.min.js": ["js/site.js"]
         }

@@ -12,3 +12,24 @@
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
+
+@mixin word-wrap() {
+  word-break:     break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens:    auto;
+  hyphens:         auto;
+}
+
+@mixin ellipsis() {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+@function black($opacity) {
+  @return rgba(black, $opacity)
+}
+
+@function white($opacity) {
+  @return rgba(white, $opacity)
+}
