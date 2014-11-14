@@ -7,6 +7,17 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON("package.json"),
 
+    copy: {
+      jquery: {
+        files: [{
+          expand: true,
+          cwd: "bower_components/jquery/dist/",
+          src: "jquery.min.js",
+          dest: "vendor/js/"
+        }]
+      }
+    },
+
     uglify: {
       global: {
         options: {
@@ -89,6 +100,6 @@ module.exports = function(grunt) {
   require("load-grunt-tasks")(grunt);
 
   grunt.registerTask("serve", ["shell:jekyllServe"]);
-  grunt.registerTask("default", ["sass", "autoprefixer", "svgstore", "shell:jekyllBuild", "watch"]);
+  grunt.registerTask("default", ["copy", "sass", "autoprefixer", "svgstore", "shell:jekyllBuild", "watch"]);
 
 };
