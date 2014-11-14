@@ -4,6 +4,7 @@ body {
 	color: black(.8);
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
+	@include word-wrap();
 }
 
 body, h1, h2, h3, h4 {

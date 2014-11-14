@@ -2,7 +2,35 @@
     #FOOTER-SOCIAL-ICONS
 \*------------------------------------*/
 
-.icon--github svg, .icon--twitter svg{
+.site-footer a{
+	color: black(0.3);
+	text-decoration: none;
+
+	&:hover {
+		color: black(0.5);
+	}
+}
+.footer-col {
+	@include container();
+}
+
+.footer-col-1 {
+	@include breakpoint($medium) {
+		@include span(8 of 12);
+	}
+}
+
+.footer-col-2 {
+	@include breakpoint($medium) {
+		@include span(4 of 12 last);
+	}
+}
+
+.social-media-list li, .contact-list li {
+	list-style-type: none;
+}
+
+.icon--github svg, .icon--twitter svg {
 	height: 16px;
 	width: 16px;
 }

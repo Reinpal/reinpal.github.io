@@ -12,7 +12,7 @@ module.exports = function(grunt) {
         files: [{
           expand: true,
           cwd: "bower_components/jquery/dist/",
-          src: "jquery.min.js",
+          src: "jquery.*",
           dest: "vendor/js/"
         }]
       }
@@ -99,7 +99,7 @@ module.exports = function(grunt) {
 
   require("load-grunt-tasks")(grunt);
 
-  grunt.registerTask("serve", ["shell:jekyllServe"]);
-  grunt.registerTask("default", ["copy", "sass", "autoprefixer", "svgstore", "shell:jekyllBuild", "watch"]);
+  grunt.registerTask("serve", ["copy", "shell:jekyllServe"]);
+  grunt.registerTask("default", ["sass", "autoprefixer", "svgstore", "shell:jekyllBuild", "watch"]);
 
 };

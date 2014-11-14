@@ -51,13 +51,13 @@
  	})
 
  	//show hide popover if class is expanded
- 	$('nav').on('click touchstart', function(event) {
+ 	$('.menu-icon').on('click touchstart', function(event) {
  		showHideNav();
  		event.preventDefault();
  	})
 
  	//prevent nav from closing when clicking anywhere
- 	$('.navigation').on('click touchstart', function(event) {
+ 	$('.menu-icon').on('click touchstart', function(event) {
  		event.stopPropagation();
  	})
 
