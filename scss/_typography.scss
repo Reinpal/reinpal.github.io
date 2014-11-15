@@ -24,8 +24,12 @@ h1 {
 	line-height: 1.25;
 }
 
-h1.post-title {
+.post-title, .intro {
 	color: white(1);
+}
+
+h1.page-heading {
+	margin: 0;
 }
 
 h2 {
@@ -40,11 +44,59 @@ h4 {
 	font-size: 1.375em;
 }
 
+/*------------------------------------*\
+    #POST-PAGE-SETTINGS
+\*------------------------------------*/
+
 .page-content {
 	font-size: 1em;
 	line-height: 1.375;
 }
 
 .post-meta {
+	font-family: "proxima-nova";
+	font-size: 0.618em;
+	text-transform: uppercase;
+}
+
+.post-header .post-meta {
+	color: white(1);
+}
+
+.post-list-header {
+	margin: 0;
+}
+
+.post-link {
+	color: black(.8);
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+/*------------------------------------*\
+    #OTHER-SETTINGS
+\*------------------------------------*/
+
+hr {
+	width: span(6 of 12);
+	margin: 0 auto;
+}
+
+.regular-weight {
+	font-weight: normal;
+}
+
+.email-me-link {
+	color: black(0.8);
+
+	&:hover {
+		color: black(1);
+	}
+}
+
+.related-post-header a{
 	color: white(1);
 }

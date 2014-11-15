@@ -3,19 +3,34 @@ layout: default
 ---
 
 <div class="home">
-  <p class="text">{{ site.description }}</p>
-  <h1 class="page-heading">Posts</h1>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+  <section class="post-header">
+    <header>
+      <div class="cover-image" style="background-image: url(https://ununsplash.imgix.net/uploads/1412238370909393b4a19/79f023f1?q=75&fm=jpg&s=0d39e32b84bfacd752f109035a811830);">
+        <div class="title-container">
+          <h1 class="intro">{{ site.description }}</h1>
+        </div>
+      </div>
+    </header>
+  </section>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+
+  <section class="home-content">
+    <h1 class="page-heading">Posts</h1>
+
+    <div class="post-list">
+      {% for post in site.posts %}
+        <article>
+          <h2 class="post-list-header">
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          </h2>
+
+           <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }} By {{ post.author }}</span>
+
+          <p>{{ post.excerpt }}</p>
+        </article>
+      {% endfor %}
+    </div>
+  </section>
   
 </div>

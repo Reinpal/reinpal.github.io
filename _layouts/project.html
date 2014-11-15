@@ -2,18 +2,27 @@
 layout: default
 ---
 <div class="post">
+
 	<section class="post-header">
+
 		<header>
 			<div class="cover-image" style="background-image: url({{page.cover-image}});">
 				<div class="title-container">
 					<h1 class="post-title">{{ page.title }}</h1>
-					<p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>	
+					<p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} by {{ page.author }}{% endif %}{% if page.categories %} in {{ page.categories }}{% endif %}</p>	
 				</div>
 			</div>
 		</header>
+
 	</section>
+
   <article class="post-content">
     {{ content }}
   </article>
+
+	<div class="post-follow-ups">
+		{% include CTA-email.html %}
+		{% include related-post.html %}
+	</div>
 
 </div>

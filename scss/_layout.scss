@@ -5,3 +5,39 @@
 body {
 	@include container();
 }
+
+.home-content {
+	width: span(10 of 12);
+	margin: 0 auto;
+
+	@include breakpoint($medium) {
+		width: span(8 of 12);
+		margin: 0 auto;
+	}
+}
+
+.email-me {
+	width: span(10 of 12);
+	margin: 0 auto;
+}
+
+.related-post {
+	position: relative;
+	width: 100%;
+	padding-bottom: 56.25%
+}
+
+.related-post-content {
+	position: relative;
+	width: span(10 of 12);
+	margin: 0 auto;
+	z-index: 6;
+}
+
+.related-post-meta {
+	font-family: "proxima-nova";
+	font-weight: bold;
+	font-size: 0.618em;
+	color: white(1);
+	text-transform: uppercase;
+}
