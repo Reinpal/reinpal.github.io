@@ -1,3 +1,7 @@
+/*------------------------------------*\
+    #GLOBAL-TYPE-SETTINGS
+\*------------------------------------*/
+
 body {
 	font-family: "freight-text-pro";
 	font-size: 100%;
@@ -20,6 +24,10 @@ h1 {
 	line-height: 1.25;
 }
 
+h1.post-title {
+	color: white(1);
+}
+
 h2 {
 	font-size: 1.833em;
 }
@@ -35,4 +43,8 @@ h4 {
 .page-content {
 	font-size: 1em;
 	line-height: 1.375;
+}
+
+.post-meta {
+	color: white(1);
 }

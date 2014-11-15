@@ -3,40 +3,17 @@
 \*------------------------------------*/
 
 .site-header {
-	@include container(80em);
-	padding-top: gutter();
-	padding-bottom: gutter();
+	@include full;
 	font-family: 'proxima-nova', sans-serif;
-	background-color: $white;
-}
-
-.site-title {
-	@include span(11 of 12);
 }
 
 .site-nav {
-	@include container;
-}
-
-.container {
-	@include span(1 of 12 last);
-}
-
-.menu-icon svg{
-	width: 1.25em;
-}
-
-/*
-* Off-Canvas Nav
-*/
-
-nav {
   position: absolute;
   top: 0;
   width: 100%;
   height: gutter(4);
-  padding-top: gutter();
-  padding-bottom: gutter();
+  padding-top: gutter(6);
+  padding-bottom: gutter(6);
   right: 0;
   z-index: 1000;
   cursor: pointer;
@@ -44,6 +21,40 @@ nav {
   transform: translate(0,0);
   transition: transform .4s, height .3s, background .4s;
 }
+
+.site-title {
+  @include pre(1 of 12);
+  color: white(1);
+  text-decoration: none;
+
+  @include breakpoint($medium) {
+    @include pre(2 of 12);
+  }
+}
+
+.menu-icon {
+  float: right;
+  @include post(1 of 12);
+}
+
+.menu-icon svg {
+	width: 1.25em;
+  fill: white(1);
+}
+
+.menu-link {
+  font-family: "freight-text-pro";
+  color: black(0.8);
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+/*------------------------------------*\
+    #OFF-CANVAS-NAV
+\*------------------------------------*/
 
 /* when hidden it goes up */
 nav.invisible {
@@ -57,6 +68,15 @@ nav.detached {
   position: fixed;
   background-color: white(.9);
   transition: transform .3s, height .3s, background .4s, opacity .3s;
+}
+
+// check again for selector specificity
+nav.detached .site-title, nav.expanded .site-title {
+  color: black(0.8);
+}
+
+nav.detached .menu-icon svg, nav.expanded .menu-icon svg {
+  fill: black(0.8);
 }
 
 /* increases menu width & height */

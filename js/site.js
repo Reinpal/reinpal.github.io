@@ -1,8 +1,8 @@
  jQuery(document).ready(function($) {
  	//NAVBAR SCRIPT from Alex Cican, Teehan & Lax inspired, modified a bit
  	var previousScroll = 0, //previous Scroll position
- 			menuOffset = 60,
- 			detachPoint = 500, //point where the menu gets fixed position
+ 			menuOffset = 54,
+ 			detachPoint = 650, //point where the menu gets fixed position
  			hideShowOffset = 6; //how much you need to scroll to show/hide the menu
 
  	$(window).scroll(function() {
@@ -27,7 +27,7 @@
 
  					} else {
  						//show menu
- 						if (!$('nav').hasClass('invisible'))
+ 						if ($('nav').hasClass('invisible'))
  							$('nav').removeClass('invisible');
  					}
 
@@ -36,7 +36,7 @@
  			} else {
  				//only remove detached if user is at top
  				if (currentScroll <= 0) {
- 					$('nav').removeClass();
+ 					$('nav').removeClass('invisible detached');
  				}
 
  			}

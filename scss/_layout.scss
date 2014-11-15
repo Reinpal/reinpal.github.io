@@ -1,12 +1,7 @@
+/*------------------------------------*\
+    #BASE-LAYOUT
+\*------------------------------------*/
+
 body {
 	@include container();
-}
-
-.page-content {
-	width: span(10 of 12);
-	margin: 0 auto;
-
-	@include breakpoint($medium) {
-		width: span(8 of 12);
-	}
 }

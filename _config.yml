@@ -29,3 +29,12 @@ exclude: [
   node_modules,
   README.md
 ]
+
+defaults:
+  scope: 
+    path: "projects"
+    type: "pages"
+  values:
+    layout: "project"
+    author: "Stefan Reinprecht"
+    category: "Project"
