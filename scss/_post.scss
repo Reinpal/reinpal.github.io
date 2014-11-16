@@ -2,7 +2,6 @@
     #POST/PROJECT-RELATED-STYLES
 \*------------------------------------*/
 
-
 .post-content {
 	width: span(10 of 12);
 	margin: 0 auto;
@@ -55,6 +54,17 @@
 	position: absolute;
 	top: span(3 of 12);
 	z-index: 6;
+
+	h2, h2 a, h3 {
+		color: white(1);
+		text-decoration: none;
+	}
+
+	.post-meta {
+		font-family: "proxima-nova";
+		font-weight: bold;
+		color: white(1);
+	}
 }
 
 .intro, .post-title, .post-header .post-meta {

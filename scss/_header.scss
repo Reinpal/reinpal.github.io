@@ -3,18 +3,18 @@
 \*------------------------------------*/
 
 .site-header {
-	@include full;
+	@include container();
 	font-family: 'proxima-nova', sans-serif;
 }
 
 .site-nav {
   position: absolute;
   top: 0;
-  width: 100%;
-  height: gutter(4);
-  padding-top: gutter(6);
-  padding-bottom: gutter(6);
-  right: 0;
+  left: 0;
+  width: span(12);
+  height: 77px;
+  padding-top: gutter(8);
+  padding-bottom: gutter(8);
   z-index: 1000;
   cursor: pointer;
   overflow: hidden;
@@ -22,19 +22,31 @@
   transition: transform .4s, height .3s, background .4s;
 }
 
-.site-title {
+.logo {
+  position: relative;
+  float: left;
+  width: span(7 of 12);
   @include pre(1 of 12);
-  color: white(1);
-  text-decoration: none;
+}
 
-  @include breakpoint($medium) {
-    @include pre(2 of 12);
-  }
+.menu {
+  position: relative;
+  float: left;
+  width: span(3 of 12);
+  @include post(1 of 12);
+  margin-top: 10px;
+}
+
+.site-title  svg {
+  width: 237px;
+  height: 41px;
+  fill: white(1);
 }
 
 .menu-icon {
+  position: relative;
   float: right;
-  @include post(1 of 12);
+  z-index: 1001;
 }
 
 .menu-icon svg {
@@ -57,30 +69,27 @@
 \*------------------------------------*/
 
 /* when hidden it goes up */
-nav.invisible {
+nav.nav--is-invisible {
   transform: translate(0,-64px);
   transition: transform .2s;
   opacity: 0;
 }
 
 /* when shown & detached position is fixed */
-nav.detached {
+nav.nav--is-detached {
   position: fixed;
   background-color: white(.9);
   transition: transform .3s, height .3s, background .4s, opacity .3s;
 }
 
 // check again for selector specificity
-nav.detached .site-title, nav.expanded .site-title {
-  color: black(0.8);
-}
-
-nav.detached .menu-icon svg, nav.expanded .menu-icon svg {
+nav.nav--is-detached .site-title svg, nav.nav--is-expanded .site-title svg,
+nav.nav--is-detached .menu-icon svg, nav.nav--is-expanded .menu-icon svg {
   fill: black(0.8);
 }
 
 /* increases menu width & height */
-nav.expanded {
+nav.nav--is-expanded {
   width: 100%;
   height: 100%;
   position: fixed;
@@ -90,6 +99,7 @@ nav.expanded {
 
 /* positions navigation content */
 .navigation {
+  @include span(12);
   transform: translate(0,-700px);
   opacity: 0;
   padding-top: 2em;
@@ -98,7 +108,32 @@ nav.expanded {
 }
 
 /* shows navigation */
-nav.expanded .navigation {
+nav.nav--is-expanded .navigation {
   transform: translate(0,0);
   opacity: 1;
 }
+
+.primary-navigation li {
+  list-style-type: none;
+  padding: 1em;
+}
+
+.menu-link {
+  font-size: 1.618em;
+}
+
+/* blurring content */
+// .blurred {
+//   -webkit-transform: scale(.99);
+//   -moz-transform: scale(.99);
+//   -o-transform: scale(.99);
+//   transform: scale(.99);
+//   -webkit-filter: blur(5px);
+//   -moz-filter: blur(5px);
+//   -o-filter: blur(5px);
+//   filter: blur(5px);
+//   -webkit-transition: -webkit-transform .5s, -webkit-filter .5s;
+//   -moz-transition: -moz-transform .5s, -moz-filter .5s;
+//   -o-transition: -o-transform .5s, -o-filter .5s;
+//   transition: transform .5s, filter .5s;
+// }

@@ -6,7 +6,7 @@
  			hideShowOffset = 6; //how much you need to scroll to show/hide the menu
 
  	$(window).scroll(function() {
- 		if (!$('nav').hasClass('expanded')) {
+ 		if (!$('nav').hasClass('nav--is-expanded')) {
  			var currentScroll = $(this).scrollTop(), //get current scroll position
  					scrollDiff = Math.abs(currentScroll - previousScroll); //calc how fast user scrolls
  			
@@ -14,35 +14,35 @@
  			if (currentScroll > menuOffset) {
  				// if scroll past detach point add class to fix
  				if (currentScroll > detachPoint) {
- 					if (!$('nav').hasClass('detached'))
- 						$('nav').addClass('detached');
+ 					if (!$('nav').hasClass('nav--is-detached'))
+ 						$('nav').addClass('nav--is-detached');
  				}
 
  				// if scrolling faster than hideShow then hide/show menu
  				if (scrollDiff >= hideShowOffset) {
  					if (currentScroll > previousScroll) {
  						//hide menu
- 						if (!$('nav').hasClass('invisible'))
- 							$('nav').addClass('invisible');
+ 						if (!$('nav').hasClass('nav--is-invisible'))
+ 							$('nav').addClass('nav--is-invisible');
 
  					} else {
  						//show menu
- 						if ($('nav').hasClass('invisible'))
- 							$('nav').removeClass('invisible');
+ 						if ($('nav').hasClass('nav--is-invisible'))
+ 							$('nav').removeClass('nav--is-invisible');
  					}
 
  				}
 
  			} else {
- 				//only remove detached if user is at top
+ 				//only remove nav--is-detached if user is at top
  				if (currentScroll <= 0) {
- 					$('nav').removeClass('invisible detached');
+ 					$('nav').removeClass('nav--is-invisible nav--is-detached');
  				}
 
  			}
 
  			if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
- 				$('nav').removeClass('invisible');
+ 				$('nav').removeClass('nav--is-invisible');
  			}
 
  			//replace previous Scroll with current one
@@ -50,7 +50,7 @@
  		}
  	})
 
- 	//show hide popover if class is expanded
+ 	//show hide popover if class is nav--is-expanded
  	$('.menu-icon').on('click touchstart', function(event) {
  		showHideNav();
  		event.preventDefault();
@@ -63,7 +63,7 @@
 
  	// check if nav popover is shown
  	function showHideNav() {
- 		if ($('nav').hasClass('expanded')) {
+ 		if ($('nav').hasClass('nav--is-expanded')) {
  			hideNav();
  		} else {
  			showNav();
@@ -72,8 +72,8 @@
 
  	//show popover
  	function showNav() {
- 		$('nav').removeClass('invisible').addClass('expanded');
- 		//$(.container).addClass('blurred');
+ 		$('nav').removeClass('nav--is-invisible').addClass('nav--is-expanded');
+ 		//$('.page-content').addClass('blurred');
 
  		window.setTimeout(function() {
  			$('body').addClass('no_scroll');
@@ -85,13 +85,13 @@
 
  	//hide popover
  	function hideNav() {
- 		//$('.container').removeClass('blurred');
+ 		//$('.page-content').removeClass('blurred');
 
  		window.setTimeout(function() {
  			$('body').removeClass();
  		}, 10); //allow animation to start before removing class in firefox
 
- 		$('nav').removeClass('expanded');
+ 		$('nav').removeClass('nav--is-expanded');
  		$('.navigation a').attr('tabindex', '-1'); //disable tab selection
  		$('icon').blur(); //deselect icon when nav is hidden
  	}

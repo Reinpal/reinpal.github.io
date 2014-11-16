@@ -6,6 +6,23 @@ body {
 	@include container();
 }
 
+body.no_scroll {
+  overflow: hidden;
+  height: 100%;
+}
+
+/* Firefox fix for overflow: hidden. Scroll bar is hidden and moves everything to the right */
+@-moz-document url-prefix() {
+  body.no_scroll {
+    /*margin-right: 23px;*/
+  }
+
+  body.no_scroll .expanded {
+    /*padding-right: 7px;*/
+    background: rgba(255,255,255,.98); /* because FF no blur, reduce bg transparency */
+  }
+}
+
 .home-content {
 	width: span(10 of 12);
 	margin: 0 auto;
@@ -15,6 +32,11 @@ body {
 		margin: 0 auto;
 	}
 }
+
+
+/*------------------------------------*\
+    #INCLUDES
+\*------------------------------------*/
 
 .email-me {
 	width: span(10 of 12);
@@ -40,4 +62,94 @@ body {
 	font-size: 0.618em;
 	color: white(1);
 	text-transform: uppercase;
+}
+
+.all-projects {
+	position: relative;
+	width: span(12);
+	padding-bottom: 42.553191489%;
+}
+
+
+/*------------------------------------*\
+    #WORK-LIST
+\*------------------------------------*/
+
+.work-list {
+	position: relative;
+	@include container();
+	height: 25vh;
+
+	@include breakpoint($medium) {
+		height: 45vh;
+	}
+
+		@include breakpoint($large) {
+		height: 90vh;
+	}
+
+}
+
+.work-list-item {
+	position: relative;
+	float: left;
+	width: span(12 of 12);
+	height: 100%;
+
+	@include breakpoint($medium) {
+		width: span(50%);
+	}
+
+		@include breakpoint($large) {
+		width: span(25%);
+	}
+}
+
+/*------------------------------------*\
+    #VALUES-GRID
+\*------------------------------------*/
+
+.values-grid {
+	@include clearfix();
+	padding: 0;
+}
+
+.values-grid li {
+	float: left;
+	width: span(33.333%);
+	padding: 1em;
+	background: black(0.8);
+	color: white;
+	list-style-type: none;
+}
+
+/*------------------------------------*\
+    #BUTTON-STYLES
+\*------------------------------------*/
+
+.btn {
+	padding: 20px 30px;
+	border: 3px solid;
+}
+
+.btn--primary {
+	color: white(.8);
+	border-color: white(.8);
+	transition: all .3s;
+
+	&:hover {
+		color: white(1);
+		border-color: white(1);
+	}
+}
+
+/*------------------------------------*\
+    #AVATAR-CIRCLE
+\*------------------------------------*/
+
+.avatar {
+	line-height: 0;
+	display: inline-block;
+	border-radius: 50%;
+	width: 50%;
 }

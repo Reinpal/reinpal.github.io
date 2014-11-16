@@ -8,6 +8,9 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://reinpal.github.io" # the base hostname & protocol for your site
 twitter_username: reinpal
 github_username:  reinpal
+behance_username:  reinpal
+vimeo_username:  reinpal
+facebook_username:  reinpal
 
 highlighter: pygments
 

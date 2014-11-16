@@ -63,7 +63,7 @@ module.exports = function(grunt) {
         livereload: true
       },
       site: {
-        files: ["index.html", "writing.html", "about.html", "_layouts/*.html", "_posts/*.md", "_projects/*.md", "_includes/*.html"],
+        files: ["index.html", "projects/index.html", "about.html", "_layouts/*.html", "_posts/*.md", "_projects/*.md", "_includes/*.html"],
         tasks: ["shell:jekyllBuild"]
       },
       js: {
@@ -82,7 +82,7 @@ module.exports = function(grunt) {
 
     svgstore: {
       options: {
-        prefix : "shape-",
+        prefix : "icon-",
         cleanup: false,
         svg: {
           style: "display: none;"

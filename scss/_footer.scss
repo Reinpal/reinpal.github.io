@@ -26,11 +26,21 @@
 	}
 }
 
-.social-media-list li, .contact-list li {
-	list-style-type: none;
+.social-media-list {
+	@include container();
 }
 
-.icon--github svg, .icon--twitter svg {
-	height: 16px;
-	width: 16px;
+.social-media-list li, .contact-list li {
+	list-style-type: none;
+	float: left;
+}
+
+.social-media-list li {
+	@include span(2 of 12);
+}
+
+.footer-col .icon svg {
+	height: 1em;
+	width: 1em;
+	fill: black(0.6);
 }

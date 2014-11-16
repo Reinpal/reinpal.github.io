@@ -1,0 +1,65 @@
+---
+layout: default
+---
+<div class="post">
+
+  <section class="post-header">
+
+		<header>
+			<div class="cover-image" style="background-image: url({{page.cover-image}});">
+				<div class="title-container">
+				<img src="{{page.avatar}}" alt="" class="avatar">
+					<h1 class="post-title">{{ site.title }}</h1>
+					<a href="#" class="btn btn--primary">Download my CV</a>
+				</div>
+			</div>
+		</header>
+
+	</section>
+
+  <article class="post-content">
+    {{ content }}
+  </article>
+
+  <div class="core-values">
+  	<ul class="values-grid">
+
+	    <li>
+	    	Intersection of Design and Development
+	    	<hr>
+	    </li>
+
+	    <li>
+	    	Improving the UX of Webapps
+	    	<hr>
+	    </li>
+
+	    <li>
+	    	Always looking for extraordinary Stories
+	    	<hr>
+	    </li>
+
+	    <li>
+	    	Capturing the Essence of every Moment
+	    	<hr>
+	    </li>
+
+	    <li>
+	    	Carefully crafting usable Websites
+	    	<hr>
+	    </li>
+
+	    <li>
+	    	Coordination of Teams
+	    	<hr>
+	    </li>
+		</ul>
+
+  </div>
+
+	<div class="post-follow-ups">
+		{% include CTA-email.html %}
+		{% include all-projects.html %}
+	</div>
+
+</div>
