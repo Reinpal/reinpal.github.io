@@ -140,19 +140,158 @@ body.no_scroll {
     #VALUES-GRID
 \*------------------------------------*/
 
-.values-grid {
+.grid {
+	position: relative;
 	@include clearfix();
-	padding: 0;
+	margin: 0 auto;
+	padding: 1em 0 4em;
+	max-width: 1000px;
+	list-style: none;
+	text-align: center;
+
+	figure {
+		position: relative;
+		float: left;
+		overflow: hidden;
+		margin: 0;
+		min-width: 320px;
+		max-width: 480px;
+		max-height: 360px;
+		width: 48%;
+		background: #3085a3;
+		text-align: center;
+		cursor: pointer;
+		
+		img {
+			position: relative;
+			display: block;
+			min-height: 100%;
+			max-width: 100%;
+			opacity: 0.8;
+		}
+		
+		figcaption {
+			color: white(1);
+			font-size: 0.875em;
+			backface-visibility: hidden;
+		}
+
+	}
+
 }
 
-.values-grid li {
-	float: left;
-	width: span(33.333%);
-	padding: 1em;
-	background: black(0.8);
-	color: white;
-	list-style-type: none;
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+	pointer-events: none;
 }
+
+.grid figure figcaption,
+.grid figure figcaption > a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+.grid figure figcaption > a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+}
+
+.grid figure h2 {
+	font-weight: bold;
+}
+
+.grid figure h2 span {
+	font-family: "freight-text-pro";
+	font-weight: normal;
+	font-style: italic;
+	text-transform: none;
+}
+
+.grid figure h2,
+.grid figure p {
+	margin: 0;
+}
+
+.grid figure p {
+	text-transform: none;
+	font-size: 0.704em;
+}
+
+figure.animated figcaption::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black(0.3);
+    background: linear-gradient(to bottom, black(0) 0%, black(0.7) 100%);
+    content: '';
+    opacity: 0;
+    transform: translate3d(0,50%,0);
+}
+ 
+figure.animated h2 {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    color: white(1);
+    transition: transform 0.35s;
+    transform: translate3d(0,-50%,0);
+
+    &:after {
+    	position: absolute;
+			top: 100%;
+			left: 50%;
+			width: 25%;
+			height: 4px;
+			background: #fff;
+			content: '';
+			opacity: 0;
+			transition: opacity 0.35s, transform 0.35s;
+			-webkit-transform: translate3d(0,40px,0);
+			transform: translate3d(0,40px,0);
+    }
+}
+ 
+figure.animated figcaption::before,
+figure.animated p {
+    transition: opacity 0.35s, transform 0.35s;
+}
+ 
+figure.animated p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 2em;
+    width: 100%;
+    opacity: 0;
+    transform: translate3d(0,10px,0);
+}
+ 
+figure.animated:hover h2 {
+    color: white(1);
+    transform: translate3d(0,-50%,0) translate3d(0,-40px,0);
+
+    &:after {
+    	opacity: 1;
+			transform: translate3d(0,0,0);
+    }
+}
+ 
+figure.animated:hover figcaption::before ,
+figure.animated:hover p {
+    opacity: 1;
+    transform: translate3d(0,0,0);
+}
+
 
 /*------------------------------------*\
     #BUTTON-STYLES
