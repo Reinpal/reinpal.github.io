@@ -1,5 +1,5 @@
 /*------------------------------------*\
-    #FOOTER-SOCIAL-ICONS
+    #FOOTER-STYLES
 \*------------------------------------*/
 
 .site-footer a{
@@ -15,19 +15,38 @@
 }
 
 .footer-col-1 {
+	@include span(12 of 12);
+
 	@include breakpoint($medium) {
 		@include span(8 of 12);
 	}
 }
 
 .footer-col-2 {
+	@include span(12 of 12 last);
+
 	@include breakpoint($medium) {
 		@include span(4 of 12 last);
 	}
 }
 
+.contact-list {
+	@include clearfix();
+	width: span(10 of 12);
+	margin: gutter(12) auto;
+	font-family: "proxima-nova";
+	font-size: 0.704em;
+
+	@include breakpoint($large) {
+		margin: gutter(12) 0;
+	}
+}
+
 .social-media-list {
-	@include container();
+	@include container(12);
+	@include pre(1 of 12);
+	padding: gutter(12) 0;
+
 }
 
 .social-media-list li, .contact-list li {
@@ -36,11 +55,11 @@
 }
 
 .social-media-list li {
-	@include span(2 of 12);
+	@include gallery(2 of 12);
 }
 
 .footer-col .icon svg {
 	height: 1em;
 	width: 1em;
-	fill: black(0.6);
+	fill: black(0.4);
 }

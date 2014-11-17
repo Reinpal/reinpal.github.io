@@ -8,8 +8,10 @@ layout: default
 
 		<div class="cover-image" style="background-image: url({{ post.cover-image }})">
 			<div class="title-container">
-				<p class="post-meta">{{ post.client }}</p>
-				<h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>				
+				<div class="work-list-content">
+					<p class="post-meta">{{ post.client }}</p>
+					<h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>				
+				</div>
 			</div>
 		</div>
 

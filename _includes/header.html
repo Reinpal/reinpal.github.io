@@ -21,9 +21,21 @@
           <ul class="primary-navigation">
             {% for page in site.pages %}
               {% if page.title %}
-              <li><a class="menu-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+              <li>
+                <a class="menu-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+                <span class="menu-link-desc">{{page.desc}}</span>
+              </li>
               {% endif %}
             {% endfor %}
+
+            {% for post in site.posts %}
+              {% if post.client %}
+              <li>
+                <a class="menu-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.client }}</a>
+                <span class="menu-link-desc">{{ post.title }}</span>
+              </li>
+              {% endif %}
+            {% endfor %}            
           </ul>
         </div>
       </div>

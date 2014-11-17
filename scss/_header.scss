@@ -12,7 +12,7 @@
   top: 0;
   left: 0;
   width: span(12);
-  height: 77px;
+  height: 55px;
   padding-top: gutter(8);
   padding-bottom: gutter(8);
   z-index: 1000;
@@ -20,27 +20,42 @@
   overflow: hidden;
   transform: translate(0,0);
   transition: transform .4s, height .3s, background .4s;
+
+  @include breakpoint($medium) {
+    height: 77px;
+  }
 }
 
 .logo {
   position: relative;
   float: left;
-  width: span(7 of 12);
+  width: span(6 of 12 first);
   @include pre(1 of 12);
 }
 
 .menu {
   position: relative;
   float: left;
-  width: span(3 of 12);
+  width: span(4 of 12 last);
   @include post(1 of 12);
-  margin-top: 10px;
+  margin-top: 8px;
+
+  @include breakpoint($medium) {
+    margin-top: 10px;    
+  }
+
 }
 
 .site-title  svg {
-  width: 237px;
-  height: 41px;
+  width: 157px;
+  height: 35px;
   fill: white(1);
+
+  @include breakpoint($medium) {
+    width: 237px;
+    height: 41px;
+  }
+
 }
 
 .menu-icon {
@@ -102,7 +117,7 @@ nav.nav--is-expanded {
   @include span(12);
   transform: translate(0,-700px);
   opacity: 0;
-  padding-top: 2em;
+  padding-top: 0;
   text-align: center;
   transition: transform .15s, opacity .7s;
 }
@@ -113,13 +128,28 @@ nav.nav--is-expanded .navigation {
   opacity: 1;
 }
 
+.primary-navigation {
+  padding: 0;
+}
+
 .primary-navigation li {
   list-style-type: none;
   padding: 1em;
 }
 
 .menu-link {
+  font-family: "proxima-nova";
+  font-weight: bold;
   font-size: 1.618em;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+
+.menu-link-desc {
+  font-family: "freight-text-pro";
+  font-style: italic;
+  font-size: 0.704em;
+  display: block;
 }
 
 /* blurring content */
