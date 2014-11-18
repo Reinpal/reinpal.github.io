@@ -56,26 +56,35 @@ body.no_scroll {
 .email-me {
 	width: span(10 of 12);
 	margin: 0 auto;
+	border-top: 1px solid black(0.2);
+	padding: 0.704em 0;
+}
+
+.email-me-headline {
+	font-size: 1.1em;
+	text-align: center;
 }
 
 .related-post {
 	position: relative;
 	width: 100%;
-	padding-bottom: 56.25%
+	padding-bottom: 56.25% //16:9 
 }
 
+
 .related-post-content, .all-projects-content {
-	position: relative;
+	@include centerer();
 	width: span(10 of 12);
 	color: white(1);
-	margin: 0 auto;
 	z-index: 6;
 }
 
-.related-post-meta {
+.related-post-meta, .work-list-meta {
+	margin-top: 0;
+	margin-bottom: 0.704em;
 	font-family: "proxima-nova";
 	font-weight: bold;
-	font-size: 0.618em;
+	font-size: 0.704em;
 	color: white(1);
 	text-transform: uppercase;
 }
@@ -83,17 +92,20 @@ body.no_scroll {
 .all-projects {
 	position: relative;
 	width: span(12);
-	padding-bottom: 42.553191489%;
+	padding-bottom: 42.553191489%; //2.35:1
 }
 
 .all-projects-content {
 	text-align: center;
 }
 
+.all-projects-header {
+	font-size: 1.1em;
+}
+
 .all-projects-content span {
 	display: block;
 	font-style: italic;
-	margin-bottom: 1.555em;
 }
 
 /*------------------------------------*\
@@ -131,9 +143,19 @@ body.no_scroll {
 }
 
 .work-list-content {
-	position: relative;
 	width: span(10 of 12);
-	margin: 0 auto;
+	@include centerer();
+	color: white(1);
+	z-index: 6;
+}
+
+.work-list-header a{
+	color: white(1);
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
 }
 
 /*------------------------------------*\
@@ -299,9 +321,9 @@ figure.animated:hover p {
 
 .btn {
 	display: inline-block;
-	font-size: 0.875em;
-	padding: 10px;
-	border: 3px solid;	
+	font-size: 0.704em;
+	padding: 5px 10px;
+	border: 2px solid;	
 	margin: 0.875em 0;
 
 	@include breakpoint($medium) {
@@ -312,13 +334,14 @@ figure.animated:hover p {
 }
 
 .btn--primary {
-	color: white(.8);
-	border-color: white(.8);
-	transition: all .3s;
+	color: white(1);
+	border-color: white(1);
+	transition: all .25s;
+	letter-spacing: 2px;
 
 	&:hover {
-		color: white(1);
-		border-color: white(1);
+		color: white(0.6);
+		border-color: white(0.6);
 	}
 }
 
