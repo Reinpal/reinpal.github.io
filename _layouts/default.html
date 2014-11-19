@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html>
-
   {% include head.html %}
 
   <body>
-
-    {% include header.html %}
+    {% if page.header == 'white' %}
+      {% include header_alt.html %}
+    {% else %}
+      {% include header.html %}
+    {% endif%}
+    
     {% include svg-defs.svg %}
     <div class="page-content">
       <div class="wrapper">

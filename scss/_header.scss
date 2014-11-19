@@ -46,6 +46,15 @@
 
 }
 
+.nav--is-white {
+  position: relative;
+  background: white(1);
+}
+
+.nav--is-white .site-title svg, .nav--is-white .menu svg {
+  fill: black(1);
+}
+
 .site-title  svg {
   width: 157px;
   height: 35px;

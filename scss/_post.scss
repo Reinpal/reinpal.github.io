@@ -14,6 +14,7 @@
 .post-header {
 	position: relative;
 	height: 90vh;
+	margin-bottom: 2em;
 }
 
 .cover-image {
@@ -70,9 +71,11 @@
 
 .project-info-wrapper {
 	position: absolute;
+	left: 50%;
+	transform: translate(-50%, -50%);
 	width: span(12 of 12);
-	bottom: span(1 of 12);
-	margin: 0 auto;
+	bottom: gutter(12);
+	padding: 0 10px;
 	color: white(1);
 	z-index: 6;
 }
@@ -82,7 +85,19 @@
 	font-family: "proxima-nova";
 	font-weight: bold;
 	text-transform: uppercase;
-	font-size: 0.704em;
+	font-size: 0.5em;
+
+	@include breakpoint($medium) {
+		font-size: 0.704em;
+	}
+}
+
+.year {
+	@include span(2 of 12);
+}
+
+.collaborators {
+	@include span(4 of 12);
 }
 
 .client p, .year p, .collaborators p, .type p {
@@ -93,7 +108,7 @@
 	font-family: "freight-text-pro";
 	font-weight: normal;
 	text-transform: none;
-	font-size: 0.875em;
+	font-size: 1em;
 	margin: 0;
 }
 

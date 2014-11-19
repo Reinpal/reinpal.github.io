@@ -2,6 +2,8 @@
     #GLOBAL-TYPE-SETTINGS
 \*------------------------------------*/
 
+$ratio: 1.333;
+
 body {
 	font-family: "freight-text-pro";
 	font-size: 100%;
@@ -23,6 +25,11 @@ h1, h2, h3, h4 {
 h1 {
 	font-size: 1.777em;
 	line-height: 1.25;
+
+	@include breakpoint($medium) {
+		font-size: 2.073em;
+		line-height: 1.25em;
+	}
 }
 
 .post-title, .intro {
@@ -36,6 +43,10 @@ h1.page-heading {
 h2 {
 	font-size: 1.507em;
 	line-height: 1.2;
+
+	@include breakpoint($medium) {
+		font-size: 1.666em;
+	}
 }
 
 h3 {
@@ -48,6 +59,15 @@ h4 {
 
 p {
 	font-size: 1.1em;
+
+	@include breakpoint($large) {
+		font-size: 1.25em;
+	}
+}
+
+blockquote {
+	font-size: 1.2em;
+	font-style: italic;
 }
 
 

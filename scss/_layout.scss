@@ -55,15 +55,33 @@ body.no_scroll {
 \*------------------------------------*/
 
 .email-me {
+	position: relative;
 	width: span(10 of 12);
-	margin: 1em auto;
-	border-top: 1px solid black(0.2);
-	padding: 2em 0;
+	margin: 0.5em auto;
+	padding: 0.875em 0;
+
+	@include breakpoint($medium) {
+		margin: 1em auto;
+		padding: 2em 0;
+	}
+
+	&:after {
+		@include centerer();
+		top: 0;
+		content: '';
+		width: span(8 of 12);
+		height: 1px;
+		background: black(0.2);
+	}
 }
 
 .email-me-headline {
 	font-size: 1.1em;
 	text-align: center;
+
+	@include breakpoint($medium) {
+		font-size: 1.555em;
+	}
 }
 
 .related-post {
@@ -102,6 +120,10 @@ body.no_scroll {
 
 .all-projects-header {
 	font-size: 1.1em;
+
+	@include breakpoint($medium) {
+		font-size: 1.555em;
+	}
 }
 
 .all-projects-content span {
