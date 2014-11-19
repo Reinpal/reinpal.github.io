@@ -43,7 +43,8 @@ body.no_scroll {
 }
 
 .about-me {
-	width: span(12);
+	position: relative;
+	width: span(10 of 12);
 	margin: 0 auto;
 	text-align: center;
 }
@@ -55,9 +56,9 @@ body.no_scroll {
 
 .email-me {
 	width: span(10 of 12);
-	margin: 0 auto;
+	margin: 1em auto;
 	border-top: 1px solid black(0.2);
-	padding: 0.704em 0;
+	padding: 2em 0;
 }
 
 .email-me-headline {
@@ -269,17 +270,13 @@ figure.animated h2 {
     transform: translate3d(0,-50%,0);
 
     &:after {
-    	position: absolute;
-			top: 100%;
-			left: 50%;
+			@include centerer();
+			top: 125%;
 			width: 25%;
-			height: 4px;
+			height: 3px;
 			background: #fff;
 			content: '';
-			opacity: 0;
-			transition: opacity 0.35s, transform 0.35s;
-			-webkit-transform: translate3d(0,40px,0);
-			transform: translate3d(0,40px,0);
+			opacity: 1;
     }
 }
  
@@ -296,16 +293,6 @@ figure.animated p {
     width: 100%;
     opacity: 0;
     transform: translate3d(0,10px,0);
-}
- 
-figure.animated:hover h2 {
-    color: white(1);
-    transform: translate3d(0,-50%,0) translate3d(0,-40px,0);
-
-    &:after {
-    	opacity: 1;
-			transform: translate3d(0,0,0);
-    }
 }
  
 figure.animated:hover figcaption::before ,
@@ -327,7 +314,7 @@ figure.animated:hover p {
 	margin: 0.875em 0;
 
 	@include breakpoint($medium) {
-		padding: 20px 30px;
+		padding: 10px 20px;
 	
 	}
 
@@ -346,7 +333,7 @@ figure.animated:hover p {
 }
 
 /*------------------------------------*\
-    #AVATAR-CIRCLE
+    #ABOUT-SECTION
 \*------------------------------------*/
 
 .avatar {
@@ -354,4 +341,17 @@ figure.animated:hover p {
 	display: inline-block;
 	border-radius: 50%;
 	width: 50%;
+	max-width: 150px;
+}
+
+.name {
+	margin-top: 0.875em;
+}
+
+.job-description {
+	color: white(1);
+	font-style: italic;
+	margin-top: 0;
+	margin-bottom: 0.875em;
+	z-index: 6;
 }

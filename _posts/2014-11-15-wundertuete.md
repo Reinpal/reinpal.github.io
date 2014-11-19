@@ -2,10 +2,12 @@
 layout: project
 title:  "Branding and Webdesign for a unique and fun Design Agency"
 client: "Wundertüte"
+collaborators: Thomas Mirnig
 date:   2014-11-15 09:05:00
 author: Stefan Reinprecht
 permalink: /wundertuete/
 categories: work
+type: Branding, Webdesign
 cover-image: "https://unsplash.imgix.net/uploads/14120938606568dde6e2b/c9e42240?q=75&fm=jpg&s=30cfed70f59bbfce34b374e629bb5f84"
 ---
 
