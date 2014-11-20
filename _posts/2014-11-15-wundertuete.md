@@ -3,7 +3,7 @@ layout: project
 title:  "Branding and Webdesign for a unique and fun Design Agency"
 client: "Wundertüte"
 collaborators: Thomas Mirnig
-date:   2014-11-15 09:05:00
+date: 2014-11-20 23:27:00
 author: Stefan Reinprecht
 permalink: /wundertuete/
 categories: work
@@ -11,8 +11,9 @@ type: Branding, Webdesign
 cover-image: "https://unsplash.imgix.net/uploads/14120938606568dde6e2b/c9e42240?q=75&fm=jpg&s=30cfed70f59bbfce34b374e629bb5f84"
 ---
 
-# Heading Level 1
 Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.
+
+# Heading Level 1
 
 Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas. Dramatically maintain clicks-and-mortar solutions without functional solutions.
 
@@ -24,6 +25,8 @@ Objectively innovate empowered manufactured products whereas parallel platforms.
 Proactively envisioned multimedia based expertise and cross-media growth strategies. Seamlessly visualize quality intellectual capital without superior collaboration and idea-sharing. Holistically pontificate installed base portals after maintainable products.
 
 Phosfluorescently engage worldwide methodologies with web-enabled technology. Interactively coordinate proactive e-commerce via process-centric "outside the box" thinking. Completely pursue scalable customer service through sustainable potentialities.
+
+![Lyon Old Town](../assets/dist/img/lyon-old-town-large_x2.jpg)
 
 Collaboratively administrate turnkey channels whereas virtual e-tailers. Objectively seize scalable metrics whereas proactive e-services. Seamlessly empower fully researched growth strategies and interoperable internal or "organic" sources.
 

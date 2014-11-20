@@ -33,8 +33,40 @@ body.no_scroll {
 	}
 }
 
+.recent-entries {
+	position: relative;
+	font-family: "freight-text-pro";
+	font-weight: normal;
+	font-size: 1.333em;
+	font-style: italic;
+	text-transform: none;
+	text-align: center;
+	color: black(0.3);
+
+	&:after {
+		@include centerer();
+		height: 1px;
+		width: span(12 of 12);
+		background: black(0.1);
+		content: '';
+	}
+
+	& span {
+		position: relative;
+		z-index: 6;
+		padding: 0.704em;
+		background: white(1);
+	}
+
+}
+
 .post-list article {
 	margin-bottom: 1.555em;
+	border-bottom: 1px solid black(0.1);
+
+	@include breakpoint($medium) {
+		margin-bottom: 2.073em;
+	}
 }
 
 .profile-page {
@@ -47,6 +79,20 @@ body.no_scroll {
 	width: span(10 of 12);
 	margin: 0 auto;
 	text-align: center;
+}
+
+.signet {
+	position: relative;
+	width: span(4 of 12);
+	margin: 0 auto;
+}
+
+.signet svg {
+	display: block;
+	margin: 2em auto;
+	width: 150px;
+	height: 150px;
+	fill: white(1);
 }
 
 
@@ -71,7 +117,7 @@ body.no_scroll {
 		content: '';
 		width: span(8 of 12);
 		height: 1px;
-		background: black(0.2);
+		background: black(0.1);
 	}
 }
 
@@ -87,7 +133,8 @@ body.no_scroll {
 .related-post {
 	position: relative;
 	width: 100%;
-	padding-bottom: 56.25% //16:9 
+	padding-bottom: 42.553191489%; //2.35:1	
+	//padding-bottom: 56.25% //16:9 
 }
 
 
@@ -96,6 +143,12 @@ body.no_scroll {
 	width: span(10 of 12);
 	color: white(1);
 	z-index: 6;
+}
+
+.related-post-content {
+	@include breakpoint($medium) {
+		width: span(8 of 12);
+	}
 }
 
 .related-post-meta, .work-list-meta {
@@ -122,13 +175,14 @@ body.no_scroll {
 	font-size: 1.1em;
 
 	@include breakpoint($medium) {
-		font-size: 1.555em;
+		font-size: 1.666em;
 	}
 }
 
 .all-projects-content span {
 	display: block;
 	font-style: italic;
+	margin-bottom: 1em;
 }
 
 /*------------------------------------*\
@@ -199,13 +253,18 @@ body.no_scroll {
 		float: left;
 		overflow: hidden;
 		margin: 0;
-		min-width: 320px;
-		max-width: 480px;
-		max-height: 360px;
-		width: 48%;
+		width: span(12 of 12);
 		background: #3085a3;
 		text-align: center;
 		cursor: pointer;
+
+		@include breakpoint($medium) {
+			width: span(6 of 12);
+		}
+
+		@include breakpoint($large) {
+			width: span(4 of 12);
+		}
 		
 		img {
 			position: relative;
@@ -349,8 +408,9 @@ figure.animated:hover p {
 	letter-spacing: 2px;
 
 	&:hover {
-		color: white(0.6);
-		border-color: white(0.6);
+		color: black(1);
+		background: white(1);
+		border-color: white(1);
 	}
 }
 

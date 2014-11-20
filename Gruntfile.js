@@ -58,6 +58,30 @@ module.exports = function(grunt) {
       }
     },
 
+    responsive_images: {
+      dev: {
+        options: {
+          sizes: [{
+            width: 320
+          },{
+            name: "large",
+            width: 640
+          },{
+            name: "large",
+            width: 1024,
+            suffix: "_x2",
+            quality: 60
+          }]
+        },
+        files: [{
+          expand: true,
+          src: ['img/*.{jpg,gif,png}'],
+          cwd: 'assets/src/',
+          dest: 'assets/dist/'
+        }]        
+      }
+    },
+
     watch: {
       options: {
         livereload: true
@@ -100,6 +124,6 @@ module.exports = function(grunt) {
   require("load-grunt-tasks")(grunt);
 
   grunt.registerTask("serve", ["copy", "shell:jekyllServe"]);
-  grunt.registerTask("default", ["sass", "autoprefixer", "svgstore", "shell:jekyllBuild", "watch"]);
+  grunt.registerTask("default", ["sass", "autoprefixer", "svgstore", "shell:jekyllBuild", "responsive_images", "watch"]);
 
 };
