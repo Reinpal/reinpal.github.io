@@ -123,8 +123,8 @@ nav.nav--is-expanded {
 
 /* positions navigation content */
 .navigation {
-  @include span(12);
-  transform: translate(0,-700px);
+  @include centerer();
+  width: span(12);
   opacity: 0;
   padding-top: 0;
   text-align: center;
@@ -133,7 +133,7 @@ nav.nav--is-expanded {
 
 /* shows navigation */
 nav.nav--is-expanded .navigation {
-  transform: translate(0,0);
+  @include centerer();
   opacity: 1;
 }
 
@@ -149,9 +149,14 @@ nav.nav--is-expanded .navigation {
 .menu-link {
   font-family: "proxima-nova";
   font-weight: bold;
-  font-size: 1.618em;
+  font-size: 1.666em;
   text-transform: uppercase;
   letter-spacing: 0.15em;
+
+  @include breakpoint($medium) {
+    font-size: 2.073em;
+  }
+
 }
 
 .menu-link-desc {
@@ -159,6 +164,10 @@ nav.nav--is-expanded .navigation {
   font-style: italic;
   font-size: 0.704em;
   display: block;
+
+  @include breakpoint($medium) {
+    font-size: 1em;
+  }
 }
 
 /* blurring content */

@@ -4,7 +4,7 @@ header: white
 ---
 
 <div class="work-list">
-	{% for post in site.posts %}
+	{% for post in site.categories['work'] %}
 	<div class="work-list-item">
 
 		<div class="cover-image" style="background-image: url({{ post.cover-image }})">		

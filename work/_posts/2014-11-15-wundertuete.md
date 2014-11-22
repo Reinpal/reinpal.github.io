@@ -1,14 +1,17 @@
 ---
 layout: project
-title:  "Developing a retina-ready Website for a local company"
-client: "Merkscha"
-date:   2014-11-16 16:07:00
+title:  "Branding and Webdesign for a unique and fun Design Agency"
+client: "Wundertüte"
+collaborators: Thomas Mirnig
+date: 2014-11-20 23:27:00
 author: Stefan Reinprecht
-permalink: /merkscha/
-categories: work
-cover-image: "https://farm4.staticflickr.com/3876/14337024425_d5d35406bb_k.jpg"
+type: Branding, Webdesign
+cover-image: "https://unsplash.imgix.net/uploads/14120938606568dde6e2b/c9e42240?q=75&fm=jpg&s=30cfed70f59bbfce34b374e629bb5f84"
 ---
+
 Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.
+
+# Heading Level 1
 
 Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas. Dramatically maintain clicks-and-mortar solutions without functional solutions.
 
@@ -16,14 +19,18 @@ Completely synergize resource sucking relationships via premier niche markets. P
 
 Objectively innovate empowered manufactured products whereas parallel platforms. Holisticly predominate extensible testing procedures for reliable supply chains. Dramatically engage top-line web services vis-a-vis cutting-edge deliverables.
 
+## Heading Level 2
 Proactively envisioned multimedia based expertise and cross-media growth strategies. Seamlessly visualize quality intellectual capital without superior collaboration and idea-sharing. Holistically pontificate installed base portals after maintainable products.
 
 Phosfluorescently engage worldwide methodologies with web-enabled technology. Interactively coordinate proactive e-commerce via process-centric "outside the box" thinking. Completely pursue scalable customer service through sustainable potentialities.
+
+![Lyon Old Town](../assets/dist/img/lyon-old-town-large_x2.jpg)
 
 Collaboratively administrate turnkey channels whereas virtual e-tailers. Objectively seize scalable metrics whereas proactive e-services. Seamlessly empower fully researched growth strategies and interoperable internal or "organic" sources.
 
 Credibly innovate granular internal or "organic" sources whereas high standards in web-readiness. Energistically scale future-proof core competencies vis-a-vis impactful experiences. Dramatically synthesize integrated schemas with optimal networks.
 
+### Heading Level 3
 Interactively procrastinate high-payoff content without backward-compatible data. Quickly cultivate optimal processes and tactical architectures. Completely iterate covalent strategic theme areas via accurate e-markets.
 
 Globally incubate standards compliant channels before scalable benefits. Quickly disseminate superior deliverables whereas web-enabled applications. Quickly drive clicks-and-mortar catalysts for change before vertical architectures.
@@ -36,7 +43,7 @@ Synergistically evolve 2.0 technologies rather than just in time initiatives. Qu
 
 Dynamically target high-payoff intellectual capital for customized technologies. Objectively integrate emerging core competencies before process-centric communities. Dramatically evisculate holistic innovation rather than client-centric data.
 
-Progressively maintain extensive infomediaries via extensible niches. Dramatically disseminate standardized metrics after resource-leveling processes. Objectively pursue diverse catalysts for change for interoperable meta-services.
+>Progressively maintain extensive infomediaries via extensible niches.
 
 Proactively fabricate one-to-one materials via effective e-business. Completely synergize scalable e-commerce rather than high standards in e-services. Assertively iterate resource maximizing products after leading-edge intellectual capital.
 
