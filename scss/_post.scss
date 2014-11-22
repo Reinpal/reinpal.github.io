@@ -1,5 +1,5 @@
 /*------------------------------------*\
-    #POST/PROJECT-RELATED-STYLES
+    #POST/PROJECT-HEADER
 \*------------------------------------*/
 
 .post-content {
@@ -51,6 +51,10 @@
 	}
 }
 
+/*------------------------------------*\
+    #POST/PROJECT-TITLE
+\*------------------------------------*/
+
 .title-container {
 	position: absolute;
 	top: span(3 of 12);
@@ -67,7 +71,17 @@
 		color: white(1);
 		margin: 0;
 	}
+
+	.post-meta--serif {
+		font-family: "freight-text-pro";
+		font-weight: normal;
+		text-transform: none;
+	}
 }
+
+/*------------------------------------*\
+    #PROJECT-INFO
+\*------------------------------------*/
 
 .project-info-wrapper {
 	position: absolute;
@@ -107,13 +121,14 @@
 .client span, .year span, .collaborators span, .type span {
 	font-family: "freight-text-pro";
 	font-weight: normal;
+	font-style: italic;
 	text-transform: none;
 	font-size: 1em;
 	margin: 0;
 }
 
-.type {
-	@include span(3 of 12 last);
+.year {
+	@include span(2 of 12 last);
 }
 
 .intro, .post-title, .post-header .post-meta {
@@ -124,4 +139,56 @@
 		width: span(8 of 12);
 		@include pre(2 of 12);
 	}
+}
+
+/*------------------------------------*\
+    #PROJECT-COLLABORATORS
+\*------------------------------------*/
+
+.avatar-list {
+	vertical-align: top;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.avatar-list--collaborators {
+	@include clearfix();
+}
+
+.avatar-list-item {
+	display: inline-block;
+}
+
+.avatar-list-item--collaborators {
+	position: relative;
+	float: left;
+	margin-right: 6px;
+	display: block;
+}
+
+.avatar-icon {
+	display: block;
+	background-position: center;
+	margin: 0 auto;
+	overflow: hidden;
+	line-height: 0;
+	background-size: cover;
+	border-radius: 100%;
+}
+
+.avatar-icon--collaborator {
+	width: 30px;
+	height: 30px;
+}
+
+.avatar-image {
+	width: 100%;
+	border-radius: 100%;
+	background: #f0f0f0;
+}
+
+.avatar-image--collaborator {
+	width: 30px;
+	height: 30px;
 }

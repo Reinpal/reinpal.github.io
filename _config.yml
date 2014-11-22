@@ -15,6 +15,13 @@ youtube_username: Reinolds12
 
 highlighter: pygments
 
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      author: "Stefan Reinprecht"
+
 # Build settings
 markdown: kramdown
 
