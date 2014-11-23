@@ -4,6 +4,12 @@
 
 .footer-col-wrapper {
 	@include span(12 of 12);
+
+	@include breakpoint($large) {
+		width: span(10 of 12);
+		margin: 0 auto;
+		float: none;
+	}
 }
 
 .site-footer a{
@@ -32,6 +38,10 @@
 	@include breakpoint($medium) {
 		@include span(4 of 12 last);
 	}
+
+	@include breakpoint($large) {
+		@include span(2 of 12 last);
+	}
 }
 
 .contact-list {
@@ -43,7 +53,7 @@
 	font-size: 0.704em;
 
 	@include breakpoint($large) {
-		margin: gutter(12) 0;
+		margin: 3.69492% 0;
 	}
 }
 

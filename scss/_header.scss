@@ -24,6 +24,10 @@
   @include breakpoint($medium) {
     height: 77px;
   }
+
+  @include breakpoint($large) {
+    padding-top: 1.2%;
+  }
 }
 
 .logo {

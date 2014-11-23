@@ -31,6 +31,10 @@ h1 {
 		line-height: 1.131em;
 		margin-bottom: 1.131em;
 	}
+
+	@include breakpoint($large) {
+		font-size: 2.221em;
+	}
 }
 
 .post-title, .intro {
@@ -48,14 +52,28 @@ h2 {
 	@include breakpoint($medium) {
 		font-size: 1.666em;
 	}
+
+	@include breakpoint($large) {
+		font-size: 2.073em;
+	}
+
 }
 
 h3 {
 	font-size: 1.333em;
+
+	@include breakpoint($medium) {
+		font-size: 1.555em;
+	}
+
 }
 
 h4 {
 	font-size: 1.131em;
+
+	@include breakpoint($medium) {
+		font-size: 1.25em;
+	}
 }
 
 p {
@@ -68,11 +86,16 @@ p {
 	@include breakpoint($large) {
 		font-size: 1.25em;
 	}
+
 }
 
 blockquote {
 	font-size: 1.2em;
 	font-style: italic;
+
+	@include breakpoint($large) {
+		font-size: 1.666em;
+	}
 }
 
 
@@ -95,6 +118,7 @@ blockquote {
 	@include breakpoint($medium) {
 		font-size: 0.875em;
 	}
+
 }
 
 .post-header .post-meta {
@@ -108,6 +132,7 @@ blockquote {
 	@include breakpoint($medium) {
 		font-size: 1.375em;
 	}
+
 }
 
 .post-list p{
@@ -117,6 +142,11 @@ blockquote {
 	@include breakpoint($medium) {
 		font-size: 1.125em;
 	}
+
+	@include breakpoint($large) {
+		font-size: 1.25em;
+	}	
+
 }
 
 .post-link {
@@ -126,6 +156,7 @@ blockquote {
 	&:hover {
 		text-decoration: underline;
 	}
+
 }
 
 /*------------------------------------*\

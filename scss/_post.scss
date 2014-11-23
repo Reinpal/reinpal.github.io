@@ -9,6 +9,11 @@
 	@include breakpoint($medium) {
 		width: span(8 of 12);
 	}
+
+	@include breakpoint($large) {
+		width: span(6 of 12);
+	}
+
 }
 
 .post-header {
@@ -60,6 +65,12 @@
 	top: span(3 of 12);
 	z-index: 6;
 
+	@include breakpoint($large) {
+		top: span(6 of 12);
+		width: span(8 of 12);
+		@include pre(1 of 12);
+	}
+
 	h2, h2 a, h3 {
 		color: white(1);
 		text-decoration: none;
@@ -70,6 +81,10 @@
 		font-weight: bold;
 		color: white(1);
 		margin: 0;
+
+		@include breakpoint($large) {
+			font-size: 1.166em;
+		}
 	}
 
 	.post-meta--serif {
@@ -104,6 +119,10 @@
 	@include breakpoint($medium) {
 		font-size: 0.704em;
 	}
+
+	@include breakpoint($large) {
+		font-size: 1em;
+	}
 }
 
 .year {
@@ -125,6 +144,10 @@
 	text-transform: none;
 	font-size: 1em;
 	margin: 0;
+
+	@include breakpoint($large) {
+		font-size: 1em;
+	}
 }
 
 .year {
@@ -139,6 +162,16 @@
 		width: span(8 of 12);
 		@include pre(2 of 12);
 	}
+
+	@include breakpoint($large) {
+		width: span(10 of 12);
+		@include pre(0);
+	}
+}
+
+.title-container--home .intro {
+	margin: 0 auto;
+	text-align: center;
 }
 
 /*------------------------------------*\

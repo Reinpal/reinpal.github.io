@@ -23,14 +23,23 @@ body.no_scroll {
   }
 }
 
+.title-container.title-container--home {
+	@include centerer();
+	margin-left: 0;
+}
+
 .home-content {
 	width: span(10 of 12);
 	margin: 0 auto;
 
 	@include breakpoint($medium) {
 		width: span(8 of 12);
-		margin: 0 auto;
 	}
+
+	@include breakpoint($large) {
+		width: span(6 of 12);
+	}
+
 }
 
 .recent-entries {
@@ -111,6 +120,10 @@ body.no_scroll {
 		padding: 2em 0;
 	}
 
+	@include breakpoint ($large) {
+		margin: 3em auto;
+	}
+
 	&:after {
 		@include centerer();
 		top: 0;
@@ -128,6 +141,10 @@ body.no_scroll {
 	@include breakpoint($medium) {
 		font-size: 1.555em;
 	}
+
+	@include breakpoint($large) {
+		font-size: 2.073em;
+	}
 }
 
 .related-post {
@@ -135,6 +152,10 @@ body.no_scroll {
 	width: 100%;
 	padding-bottom: 42.553191489%; //2.35:1	
 	//padding-bottom: 56.25% //16:9 
+
+	@include breakpoint($large) {
+		padding-bottom: span(3 of 12);
+	}
 }
 
 
@@ -165,6 +186,10 @@ body.no_scroll {
 	position: relative;
 	width: span(12);
 	padding-bottom: 42.553191489%; //2.35:1
+
+	@include breakpoint($large) {
+		padding-bottom: span(3 of 12);
+	}
 }
 
 .all-projects-content {
@@ -177,12 +202,20 @@ body.no_scroll {
 	@include breakpoint($medium) {
 		font-size: 1.666em;
 	}
+
+	@include breakpoint($large) {
+		font-size: 2.073em;
+	}
 }
 
 .all-projects-content span {
 	display: block;
 	font-style: italic;
 	margin-bottom: 1em;
+
+	@include breakpoint($large) {
+		font-size: 1.555em;
+	}
 }
 
 /*------------------------------------*\
@@ -244,7 +277,7 @@ body.no_scroll {
 	@include clearfix();
 	margin: 0 auto;
 	padding: 1em 0 4em;
-	max-width: 1000px;
+	width: span(12 of 12);
 	list-style: none;
 	text-align: center;
 
@@ -259,11 +292,19 @@ body.no_scroll {
 		cursor: pointer;
 
 		@include breakpoint($medium) {
-			width: span(6 of 12);
+			width: 50%;
+
+			&:nth-child(2n + 0) {
+				float: right;
+			}
 		}
 
 		@include breakpoint($large) {
-			width: span(4 of 12);
+			width: 33.333%;
+
+			&:nth-child(2n + 0) {
+				float: right;
+			}
 		}
 		
 		img {
@@ -417,6 +458,15 @@ figure.animated:hover p {
 /*------------------------------------*\
     #ABOUT-SECTION
 \*------------------------------------*/
+
+.title-container.profile-page {
+	@include centerer();
+	margin-left: 0;
+}
+
+.profile-page .post-title.name {
+	margin: 0 auto;
+}
 
 .avatar {
 	line-height: 0;
