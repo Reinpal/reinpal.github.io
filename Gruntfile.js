@@ -62,15 +62,14 @@ module.exports = function(grunt) {
       dev: {
         options: {
           sizes: [{
+            name: "small",
             width: 320
           },{
-            name: "large",
+            name: "medium",
             width: 640
           },{
             name: "large",
-            width: 1024,
-            suffix: "_x2",
-            quality: 60
+            width: 1024
           }]
         },
         files: [{
