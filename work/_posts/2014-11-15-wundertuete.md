@@ -1,55 +1,52 @@
 ---
 layout: project
-title:  "Branding and Webdesign for a unique and fun Design Agency"
+title:  „Logo and Website for a unique and playful Design Agency"
 client: "Wundertüte"
 date: 2014-11-20 23:27:00
 permalink: /work/wundertuete
-type: Branding, Webdesign
+type: Logo, Webdesign
 cover-image: "https://unsplash.imgix.net/uploads/14120938606568dde6e2b/c9e42240?q=75&fm=jpg&s=30cfed70f59bbfce34b374e629bb5f84"
 ---
 
-Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.
+One of the main objectives of the 4th Semester at FH Joanneum is to start a „virtual“ Design-Agency. The initial team-building session went pretty quick as we all pretty much already knew with whom we wanted to work with. Our team consisted of 6 people, namely Barbara Gundl, Jakob Listabarth, Lukas Kollmann, Thomas Mirnig, Felix Pichler and myself. Concerning our skill-set we were set up pretty broadly. We all knew where our strengths were, so it was kind of a no-brainer who was responsible for what. Make sure to check out their portfolios too!
 
-# Heading Level 1
+## Starting off
 
-Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas. Dramatically maintain clicks-and-mortar solutions without functional solutions.
+Within the first few weeks we had to agree on the direction in which we wanted to go. I’m not only talking about the name but also finding a target group, financial planing and of course the Corporate Identity of our company. 
+During the first brainstorming session it was clear pretty quickly, that we are a homogenous bunch of creative and fun people. So we wanted to reflect that into our Corporate Identity. Being funny and ironic was our main business goal and we came up with the name „Wundertüte“ which is German for „Wonderbag“ (amazing translation, need to look it up). 
 
-Completely synergize resource sucking relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.
+So there we were, Wundertüte, a collective of young and aspiring designers just waiting to get our hands on everything related to Branding in combination with Webdesign and Development. You’ll never know what you’re gonna get, but you’ll like it. This was probably our key claim. And our mission statement was: „We make ideas visible“. 
 
-Objectively innovate empowered manufactured products whereas parallel platforms. Holisticly predominate extensible testing procedures for reliable supply chains. Dramatically engage top-line web services vis-a-vis cutting-edge deliverables.
+>We celebrate Ideas.
+>We celebrate beautiful things.
+>We celebrate the moment.
 
-## Heading Level 2
-Proactively envisioned multimedia based expertise and cross-media growth strategies. Seamlessly visualize quality intellectual capital without superior collaboration and idea-sharing. Holistically pontificate installed base portals after maintainable products.
+Our key target group are people with big dreams and plans because we all are hungry for a challenge. Having settled all the details of how we wanted to be as a company we went straight into the design phase.
 
-Phosfluorescently engage worldwide methodologies with web-enabled technology. Interactively coordinate proactive e-commerce via process-centric "outside the box" thinking. Completely pursue scalable customer service through sustainable potentialities.
+## Developing a Corporate Identity
 
-![Lyon Old Town](../assets/dist/img/lyon-old-town-large_x2.jpg)
+So we all started to think of Colors, Type and Logo Ideas that would reflect the core values of our brand. After a few sessions with feedback from all of our Professors at the University we found the perfect Identity for us as a company. 
 
-Collaboratively administrate turnkey channels whereas virtual e-tailers. Objectively seize scalable metrics whereas proactive e-services. Seamlessly empower fully researched growth strategies and interoperable internal or "organic" sources.
+## The Logo
 
-Credibly innovate granular internal or "organic" sources whereas high standards in web-readiness. Energistically scale future-proof core competencies vis-a-vis impactful experiences. Dramatically synthesize integrated schemas with optimal networks.
+My personal take on the Logo, was to create a strong word mark which would work on it’s on. It’s basically a slightly modified version of Brandon Grotesque Bold. Which shines with its modern character and the small x-height creating a distinguished logomark. It works as a contrast to our fun and playful nature by not showing what its all about at first sight. Kind of how a Wundertüte works in real life. 
 
-### Heading Level 3
-Interactively procrastinate high-payoff content without backward-compatible data. Quickly cultivate optimal processes and tactical architectures. Completely iterate covalent strategic theme areas via accurate e-markets.
+## The colors
 
-Globally incubate standards compliant channels before scalable benefits. Quickly disseminate superior deliverables whereas web-enabled applications. Quickly drive clicks-and-mortar catalysts for change before vertical architectures.
+We chose two shades of blue for our main colors. The Wunderblau and the Wunderhellblau. Blue stands, again contrasting to our playful nature, for calmness, Trust and Friendship and the slight turquoise hue stands for communication. The Wunderhellblau is used as a accent-color.
 
-Credibly reintermediate backend ideas for cross-platform models. Continually reintermediate integrated processes through technically sound intellectual capital. Holistically foster superior methodologies without market-driven best practices.
+We also developed a striped pattern to serve as a background for some of our stationary e.g. Business Cards and Letterhead. 
 
-Distinctively exploit optimal alignments for intuitive bandwidth. Quickly coordinate e-business applications through revolutionary catalysts for change. Seamlessly underwhelm optimal testing procedures whereas bricks-and-clicks processes.
+Another key element of our Corporate Identity are confettis. Which accompany our fun nature and contrasts with the clean type and the clam colors. 
 
-Synergistically evolve 2.0 technologies rather than just in time initiatives. Quickly deploy strategic networks with compelling e-business. Credibly pontificate highly efficient manufactured products and enabled data.
+## The Website
 
-Dynamically target high-payoff intellectual capital for customized technologies. Objectively integrate emerging core competencies before process-centric communities. Dramatically evisculate holistic innovation rather than client-centric data.
+After we’ve all settled on our Corporate Design it was that much easier to put together a Corporate Website according to our Design-Manual. My Job was to design and develop the Website. We used Wordpress as our CMS and decided on making the Website responsive and retina-ready. Large-Images and minimal typography  are used to put a focus on the content. You can see the site right here. 
 
->Progressively maintain extensive infomediaries via extensible niches.
+## The Project
 
-Proactively fabricate one-to-one materials via effective e-business. Completely synergize scalable e-commerce rather than high standards in e-services. Assertively iterate resource maximizing products after leading-edge intellectual capital.
+The biggest project during the semester on which we worked as a company was a website for the creative-coworking space Sechserhaus in Graz. You can see the Website live right here and read a more detailed case study about the creation of it right here. 
 
-Distinctively re-engineer revolutionary meta-services and premium architectures. Intrinsically incubate intuitive opportunities and real-time potentialities. Appropriately communicate one-to-one technology after plug-and-play networks.
+## Summing up
 
-Quickly aggregate B2B users and worldwide potentialities. Progressively plagiarize resource-leveling e-commerce through resource-leveling core competencies. Dramatically mesh low-risk high-yield alignments before transparent e-tailers.
-
-Appropriately empower dynamic leadership skills after business portals. Globally myocardinate interactive supply chains with distinctive quality vectors. Globally revolutionize global sources through interoperable services.
-
-Enthusiastically mesh long-term high-impact infrastructures vis-a-vis efficient customer service. Professionally fashion wireless leadership rather than prospective experiences. Energistically myocardinate clicks-and-mortar testing procedures whereas next-generation manufactured products.
+It was definitely a worth-wile experience working with a bunch of creative people from different fields together. We could all share our expertise and form the best possibly product. All of us played a substantial role within the team and that’s what made our virtual company a success. 
