@@ -106,7 +106,8 @@ nav.nav--is-invisible {
 /* when shown & detached position is fixed */
 nav.nav--is-detached {
   position: fixed;
-  background-color: white(.9);
+  background-color: white(.97);
+  box-shadow: 0 0 1px black(.15);
   transition: transform .3s, height .3s, background .2s, opacity .15s;
 }
 
