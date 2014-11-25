@@ -128,7 +128,7 @@ body.no_scroll {
 		@include centerer();
 		top: 0;
 		content: '';
-		width: span(8 of 12);
+		width: span(4 of 12);
 		height: 1px;
 		background: black(0.1);
 	}
@@ -302,7 +302,7 @@ body.no_scroll {
 		@include breakpoint($large) {
 			width: 33.333%;
 
-			&:nth-child(2n + 0) {
+			&:nth-child(3n + 0) {
 				float: right;
 			}
 		}

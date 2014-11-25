@@ -9,7 +9,7 @@ layout: default
 			<div class="cover-image" style="background-image: url({{page.cover-image}});">
 				<div class="title-container">
 					<h1 class="post-title">{{ page.title }}</h1>
-					<p class="post-meta post-meta--serif">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} by {{ page.author }}{% endif %}{% if page.categories %} in {{ page.categories }}{% endif %}</p>	
+					<p class="post-meta post-meta--serif">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} by {{ page.author }}{% endif %}</p>	
 				</div>
 
 				<div class="project-info-wrapper">
@@ -29,7 +29,7 @@ layout: default
 						{% for friend in site.data.friends %}
 							{% if friend.project contains page.client %}
 							<li class="avatar-list-item avatar-list-item--collaborators">
-								<a href="{{ friend.website }}" class="avatar-icon avatar-icon-collaborators"><img class="avatar-image avatar-image--collaborator" src="{{ friend.avatar }}" alt="{{ friend.name }}"></a>
+								<a href="{{ friend.website }}" class="avatar-icon avatar-icon-collaborators"><img class="avatar-image avatar-image--collaborator" src="{{ friend.avatar }}" alt="{{ friend.name }}" title="{{ friend.name }}"></a>
 							</li>
 							{% endif %}
 						{% endfor %}

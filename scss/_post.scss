@@ -67,7 +67,6 @@
 
 	@include breakpoint($large) {
 		width: span(8 of 12);
-		@include pre(1 of 12);
 	}
 
 	h2, h2 a, h3 {
@@ -113,27 +112,23 @@
 	font-family: "proxima-nova";
 	font-weight: bold;
 	text-transform: uppercase;
-	font-size: 0.5em;
+}
+
+.collaborators {
+	@include span(5 of 12);
+}
+
+.client p, .year p, .collaborators p, .type p {
+	margin: 0;
+	font-size: 0.704em;
 
 	@include breakpoint($medium) {
-		font-size: 0.704em;
+		font-size: 0.875em;
 	}
 
 	@include breakpoint($large) {
 		font-size: 1em;
 	}
-}
-
-.year {
-	@include span(2 of 12);
-}
-
-.collaborators {
-	@include span(4 of 12);
-}
-
-.client p, .year p, .collaborators p, .type p {
-	margin: 0;
 }
 
 .client span, .year span, .collaborators span, .type span {
@@ -150,10 +145,10 @@
 }
 
 .year {
-	@include span(2 of 12 last);
+	@include span(1 of 12 last);
 }
 
-.intro, .post-title, .post-header .post-meta {
+.intro, .post-header .post-meta {
 	width: span(10 of 12);
 	@include pre(1 of 12);
 
@@ -166,6 +161,10 @@
 		width: span(10 of 12);
 		@include pre(0);
 	}
+}
+
+.post-title {
+	margin-bottom: 0.5em;
 }
 
 .title-container--home .intro {
