@@ -84,6 +84,7 @@ p {
 
 	@include breakpoint($large) {
 		font-size: 1.375em;
+		line-height: 1.5em;
 	}
 
 }

@@ -16,7 +16,6 @@
   padding-top: gutter(8);
   padding-bottom: gutter(8);
   z-index: 1000;
-  cursor: pointer;
   overflow: hidden;
   transform: translate(0,0);
   transition: transform .4s, height .3s, background .2s;
@@ -59,16 +58,28 @@
   fill: black(1);
 }
 
+.site-title {
+  position: relative;
+  display: block;
+  height: 35px;
+  z-index: 1001;
+}
+
 .site-title  svg {
   width: 157px;
   height: 35px;
   fill: white(1);
+  pointer-events: none;
 
   @include breakpoint($medium) {
     width: 237px;
     height: 41px;
   }
 
+}
+
+.site-title svg use {
+  pointer-events: none;
 }
 
 .menu-icon {
@@ -123,7 +134,7 @@ nav.nav--is-expanded {
   height: 100%;
   position: fixed;
   cursor: default;
-  background: white(.9);
+  background: white(.97);
 }
 
 /* positions navigation content */
@@ -173,6 +184,10 @@ nav.nav--is-expanded .navigation {
 
   @include breakpoint($medium) {
     font-size: 1em;
+  }
+
+  @include breakpoint($large) {
+    font-size: 1.131em;
   }
 }
 
