@@ -2,7 +2,7 @@
 
   {% for post in site.related_posts limit:1 %}
 
-  <div class="cover-image" style="background-image: url({{post.cover-image}})">
+  <div class="cover-image cover-image--{{ post.client }}" style="background-image: url({{post.cover-image}})">
 
     <div class="related-post-content">
     	<p class="related-post-meta">{{post.client}}</p>
