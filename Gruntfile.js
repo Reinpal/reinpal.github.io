@@ -74,10 +74,44 @@ module.exports = function(grunt) {
         },
         files: [{
           expand: true,
-          src: ['img/*.{jpg,gif,png}'],
+          src: ['**/img/*.{jpg,gif,png}'],
           cwd: 'assets/src/',
           dest: 'assets/dist/'
         }]        
+      }
+    },
+
+    responsive_images_extender: {
+      complete: {
+        options: {
+          srcset: [{
+            suffix: '-small',
+            value: '320w'
+          },{
+            suffix: '-medium',
+            value: '640w'
+          },{
+            suffix: '-large',
+            value: '1024w'
+          }],
+          sizes: [{
+            selector: '.post-img',
+            sizeList: [{
+              cond: 'min-width: 31.25em',
+              size: 'calc(100vw - 66.10169%)'
+            },{
+              cond: 'min-width: 56.25em',
+              size: 'calc(100vw - 49.15254%)'
+            },{
+              cond: 'default',
+              size: 'calc(100vw - 83.05085%)'
+            }]
+          }]
+        },
+        files: [{
+          expand: true,
+          src: ['**/_posts/*.md'],
+        }]
       }
     },
 
@@ -123,6 +157,6 @@ module.exports = function(grunt) {
   require("load-grunt-tasks")(grunt);
 
   grunt.registerTask("serve", ["copy", "shell:jekyllServe"]);
-  grunt.registerTask("default", ["sass", "autoprefixer", "svgstore", "shell:jekyllBuild", "responsive_images", "watch"]);
+  grunt.registerTask("default", ["sass", "autoprefixer", "svgstore", "shell:jekyllBuild", "responsive_images", "responsive_images_extender", "watch"]);
 
 };

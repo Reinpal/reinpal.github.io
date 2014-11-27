@@ -44,6 +44,13 @@ h1.page-heading {
 	margin: 1em 0;
 }
 
+h1.intro {
+	font-family: 'freight-text-pro';
+	font-style: italic;
+	font-weight: normal;
+	font-size: 1.666em;
+}
+
 h2 {
 	font-size: 1.507em;
 	line-height: 1.2;
@@ -77,6 +84,7 @@ h4 {
 
 p {
 	font-size: 1.1em;
+	margin-bottom: 1.875em;
 
 	@include breakpoint($medium) {
 		font-size: 1.25em;
@@ -92,6 +100,7 @@ p {
 blockquote {
 	font-size: 1.2em;
 	font-style: italic;
+	text-align: center;
 
 	@include breakpoint($large) {
 		font-size: 1.666em;

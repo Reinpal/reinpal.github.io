@@ -7,7 +7,7 @@ header: white
 	{% for post in site.categories['work'] %}
 	<div class="work-list-item">
 
-		<div class="cover-image" style="background-image: url({{ post.cover-image }})">		
+		<div class="cover-image cover-image--{{ post.client }}" style="background-image: url({{ post.cover-image }})">		
 				<div class="work-list-content">
 					<p class="work-list-meta">{{ post.client }}</p>
 					<h2 class="work-list-header"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>				

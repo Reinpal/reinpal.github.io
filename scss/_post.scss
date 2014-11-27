@@ -22,6 +22,10 @@
 	margin-bottom: 2em;
 }
 
+.post-img {
+	max-width: 100%;
+}
+
 .cover-image {
 	position: absolute;
 	top: 0;
@@ -56,15 +60,15 @@
 	}
 }
 
-.cover-image--home {
-	&:before {
-		background: linear-gradient(to bottom, white(0) 0%, white(0.2) 25%, white(1) 100%);
-	}
+// .cover-image--home {
+// 	&:before {
+// 		background: linear-gradient(to bottom, white(0) 0%, white(0.2) 25%, white(1) 100%);
+// 	}
 
-	&:after {
-		background: white(0);
-	}
-}
+// 	&:after {
+// 		background: white(0);
+// 	}
+// }
 
 .cover-image--Tenato {
 	&:before {
