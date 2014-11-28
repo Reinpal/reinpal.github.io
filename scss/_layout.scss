@@ -76,6 +76,11 @@ body.no_scroll {
 	@include breakpoint($medium) {
 		margin-bottom: 2.073em;
 	}
+
+	& .post-meta {
+		font-family: "freight-text-pro";
+		text-transform: none;
+	}
 }
 
 .profile-page {
@@ -101,13 +106,20 @@ body.no_scroll {
 	margin: 2em auto;
 	width: 150px;
 	height: 150px;
-	fill: white(1);
+	fill: black(0.8);
 }
 
 
 /*------------------------------------*\
     #INCLUDES
 \*------------------------------------*/
+
+.post-follow-ups-signet {
+	position: relative;
+	width: 64px;
+	margin: 2.073em auto;
+	fill: black(0.1);
+}
 
 .email-me {
 	position: relative;
@@ -172,12 +184,28 @@ body.no_scroll {
 	}
 }
 
+.related-post-title {
+	position: relative;
+	padding-top: 0.704em;
+	padding-bottom: 2.073em;
+
+	&:before {
+		position: absolute;
+		content: '';
+		height: 4px;
+		width: span(6 of 12);
+		top: 0;
+		background: white(1);
+	}
+}
+
 .related-post-meta, .work-list-meta {
 	margin-top: 0;
-	margin-bottom: 0.704em;
+	margin-bottom: 0.5em;
 	font-family: "proxima-nova";
 	font-weight: bold;
 	font-size: 0.704em;
+	letter-spacing: 2px;
 	color: white(1);
 	text-transform: uppercase;
 }

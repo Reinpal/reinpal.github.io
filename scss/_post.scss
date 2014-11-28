@@ -60,15 +60,16 @@
 	}
 }
 
-// .cover-image--home {
-// 	&:before {
-// 		background: linear-gradient(to bottom, white(0) 0%, white(0.2) 25%, white(1) 100%);
-// 	}
+.cover-image--home {
 
-// 	&:after {
-// 		background: white(0);
-// 	}
-// }
+	&:before {
+		background: linear-gradient(to bottom, white(0) 0%, white(0.3) 25%, white(1) 100%);
+	}
+
+	&:after {
+		background: white(0.2);
+	}
+}
 
 .cover-image--Tenato {
 	&:before {
@@ -185,11 +186,11 @@
 
 .intro, .post-header .post-meta {
 	width: span(10 of 12);
-	@include pre(1 of 12);
+	@include pre(0 of 12);
 
 	@include breakpoint($medium) {
 		width: span(8 of 12);
-		@include pre(2 of 12);
+		@include pre(0 of 12);
 	}
 
 	@include breakpoint($large) {
