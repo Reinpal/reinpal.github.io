@@ -313,6 +313,7 @@ body.no_scroll {
 	margin: 0 auto;
 	padding: 1em 0 4em;
 	width: span(12 of 12);
+	max-width: $x-large;
 	list-style: none;
 	text-align: center;
 

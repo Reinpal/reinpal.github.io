@@ -125,6 +125,10 @@
 
 .black .lines {
   background: black(0.8);
+
+  &:before, &:after {
+    background: black(0.8);
+  }
 }
 
 .lines-button.x.close .lines {
