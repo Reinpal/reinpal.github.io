@@ -43,8 +43,7 @@
   @include post(1 of 12);
   margin-top: 8px;
 
-  @include breakpoint($medium) {
-    margin-top: 10px;    
+  @include breakpoint($medium) {   
   }
 
 }
@@ -68,7 +67,7 @@
 .site-title  svg {
   width: 157px;
   height: 35px;
-  fill: black(1);
+  fill: white(1);
   pointer-events: none;
 
   @include breakpoint($medium) {
@@ -76,6 +75,10 @@
     height: 41px;
   }
 
+}
+
+.black .site-title svg {
+  fill: black(0.8);
 }
 
 .site-title svg use {
@@ -88,9 +91,61 @@
   z-index: 1001;
 }
 
-.menu-icon svg {
-	width: 1.25em;
-  fill: black(1);
+/* For Hamburger Icon */
+ 
+.lines-button {
+  display: inline-block;
+  transition: .3s;
+  cursor: pointer;
+  user-select: none;
+ 
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.lines {
+   
+  //create middle line
+  @include line;
+  position: relative; 
+ 
+  /*create the upper and lower lines as pseudo-elements of the middle line*/
+  &:before, &:after {
+   
+   @include line;
+    position: absolute;
+    left:0;
+    content: '';
+    transform-origin: $button-size/14 center;
+  }
+  &:before { top: -$button-size/4; }
+  &:after { top: $button-size/4; }
+}
+
+.black .lines {
+  background: black(0.8);
+}
+
+.lines-button.x.close .lines {
+ 
+    /*hide the middle line*/
+    background: transparent;
+ 
+    /*overlay the lines by setting both their top values to 0*/
+    &:before, &:after{
+      transform-origin: 50% 50%;
+      top:0;
+      width: $button-size;
+    }
+ 
+    // rotate the lines to form the x shape
+    &:before{
+      transform: rotate3d(0,0,1,45deg); 
+    }
+    &:after{
+      transform: rotate3d(0,0,1,-45deg); 
+    }
 }
 
 .menu-link {
@@ -123,9 +178,13 @@ nav.nav--is-detached {
 }
 
 // check again for selector specificity
-nav.nav--is-detached .site-title svg, nav.nav--is-expanded .site-title svg,
-nav.nav--is-detached .menu-icon svg, nav.nav--is-expanded .menu-icon svg {
+nav.nav--is-detached .site-title svg, nav.nav--is-expanded .site-title svg {
   fill: black(0.8);
+}
+
+nav.nav--is-detached .menu-icon .lines:before, nav.nav--is-expanded .menu-icon .lines:before,
+nav.nav--is-detached .lines, nav.nav--is-detached .menu-icon .lines:after, nav.nav--is-expanded .menu-icon .lines:after {
+  background: black(0.8);
 }
 
 /* increases menu width & height */
@@ -161,6 +220,43 @@ nav.nav--is-expanded .navigation {
 .primary-navigation li {
   list-style-type: none;
   padding: 1em;
+}
+
+.primary-navigation li.separator {
+  padding: 0;
+}
+
+.separator {
+  position: relative;
+  font-family: "freight-text-pro";
+  font-weight: normal;
+  font-size: 0.704em;
+  font-style: italic;
+  text-transform: none;
+  text-align: center;
+  color: black(0.3);
+  margin: 0.704 0;
+
+  @include breakpoint($medium) {
+    font-size: 0.875em;
+    margin: 0.875em 0;
+  }
+
+  &:after {
+    @include centerer();
+    height: 1px;
+    width: span(4 of 12);
+    background: black(0.1);
+    content: '';
+  }
+
+  & span {
+    position: relative;
+    z-index: 6;
+    padding: 0.704em;
+    background: white(.9);
+  }
+
 }
 
 .menu-link {

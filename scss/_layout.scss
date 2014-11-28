@@ -42,7 +42,7 @@ body.no_scroll {
 
 }
 
-.recent-entries {
+.page-heading.recent-entries {
 	position: relative;
 	font-family: "freight-text-pro";
 	font-weight: normal;
@@ -51,6 +51,11 @@ body.no_scroll {
 	text-transform: none;
 	text-align: center;
 	color: black(0.3);
+	margin: 1.666em 0;
+
+	@include breakpoint($medium) {
+		margin: 2.221em 0;
+	}
 
 	&:after {
 		@include centerer();
@@ -70,11 +75,13 @@ body.no_scroll {
 }
 
 .post-list article {
-	margin-bottom: 1.555em;
+	padding-bottom: 1.666em;
+	margin-bottom: 1.666em;
 	border-bottom: 1px solid black(0.1);
 
 	@include breakpoint($medium) {
-		margin-bottom: 2.073em;
+		padding-bottom: 2.221em;
+		margin-bottom: 2.221em;
 	}
 
 	& .post-meta {
@@ -193,7 +200,7 @@ body.no_scroll {
 		position: absolute;
 		content: '';
 		height: 4px;
-		width: span(6 of 12);
+		width: span(3 of 12);
 		top: 0;
 		background: white(1);
 	}
@@ -345,7 +352,7 @@ body.no_scroll {
 		
 		figcaption {
 			color: white(1);
-			font-size: 0.875em;
+			font-size: 1em;
 			backface-visibility: hidden;
 		}
 
@@ -377,7 +384,9 @@ body.no_scroll {
 }
 
 .grid figure h2 {
+	font-size: 1.25em;
 	font-weight: bold;
+	font-style: normal;
 }
 
 .grid figure h2 span {
@@ -394,7 +403,7 @@ body.no_scroll {
 
 .grid figure p {
 	text-transform: none;
-	font-size: 0.704em;
+	font-size: 0.875em;
 }
 
 figure.animated figcaption::before {
@@ -421,7 +430,7 @@ figure.animated h2 {
 
     &:after {
 			@include centerer();
-			top: 125%;
+			top: 200%;
 			width: 25%;
 			height: 3px;
 			background: #fff;
