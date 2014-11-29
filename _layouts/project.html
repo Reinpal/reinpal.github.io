@@ -6,7 +6,7 @@ layout: default
 	<section class="post-header">
 
 		<header>
-			<div class="cover-image cover-image--{{ page.client }}" style="background-image: url({{page.cover-image}});">
+			<div class="cover-image cover-image--{{ page.client }}" style="background-image: url({{ page.cover-image-retina }});">
 				<div class="title-container">
 					<h1 class="post-title">{{ page.title }}</h1>
 					<p class="post-meta post-meta--serif">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} by {{ page.author }}{% endif %}</p>	

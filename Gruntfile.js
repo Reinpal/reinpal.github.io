@@ -70,6 +70,10 @@ module.exports = function(grunt) {
           },{
             name: "large",
             width: 1024
+          }, {
+            name: "large",
+            width: 1920,
+            suffix: "_x2"
           }]
         },
         files: [{
@@ -93,6 +97,9 @@ module.exports = function(grunt) {
           },{
             suffix: '-large',
             value: '1024w'
+          }, {
+            suffix: '-large_x2',
+            value: '2x'
           }],
           sizes: [{
             selector: '.post-img',

@@ -7,7 +7,7 @@
       </div>
 
       <div class="menu">
-        <a href="#" class="menu-icon lines-button x">
+        <a href="#" class="menu-icon lines-button x lines-button--alt">
           <span class="lines"></span>
         </a>
       </div>
@@ -23,8 +23,8 @@
               </li>
               {% endif %}
             {% endfor %}
-
-            {% for post in site.posts %}
+              <li class="separator"><span>Featured Work</span></li>
+            {% for post in site.categories['work'] limit:4 %}
               {% if post.client %}
               <li>
                 <a class="menu-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.client }}</a>

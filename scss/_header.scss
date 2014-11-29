@@ -152,6 +152,11 @@
     }
 }
 
+.lines-button--alt .lines, .lines-button--alt .lines:before,
+.lines-button--alt .lines:after {
+  background: black(.8);
+}
+
 .menu-link {
   font-family: "freight-text-pro";
   color: black(0.8);

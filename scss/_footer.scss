@@ -4,6 +4,7 @@
 
 .footer-col-wrapper {
 	@include span(12 of 12);
+	@include clearfix();
 
 	@include breakpoint($large) {
 		width: span(10 of 12);
@@ -47,7 +48,7 @@
 .contact-list {
 	@include clearfix();
 	width: span(10 of 12);
-	margin: 1.6em auto;
+	margin: 2.6em auto;
 	padding: 0;
 	font-family: "proxima-nova";
 	font-size: 0.704em;
@@ -59,8 +60,8 @@
 
 .social-media-list {
 	@include container(12);
-	@include pre(1 of 12);
-	padding: gutter(12) 0;
+	margin: 1.6em 0;
+	vertical-align: middle;
 
 }
 
@@ -80,6 +81,16 @@
 
 .social-media-list li {
 	@include gallery(2 of 12);
+
+	& a {
+		display: block;
+		height: 16px;
+	}
+}
+
+.icon {
+	display: block;
+	height: 16px;
 }
 
 .footer-col .icon svg {

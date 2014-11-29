@@ -6,6 +6,7 @@ date: 2014-11-20 23:27:00
 permalink: /work/wundertuete
 type: Logo, Webdesign
 cover-image: ../../assets/dist/wundertuete/img/wundertuete_business_cards_rain-large.jpg
+cover-image-retina: ../../assets/dist/wundertuete/img/wundertuete_business_cards_rain-large_x2.jpg
 ---
 
 At FH-Joanneum one of the main objectives during the 4th semester is to found a &#x201E;virtual&#x201C; Design-Agency. To do so we gathered up in small groups and began to think about the rough direction in which we wanted to head.
@@ -32,7 +33,7 @@ Next step was to come up with a Corporate Design. So we all started to think of 
 
 My personal take on the Logo was to create a strong mark which would work on it&#x2019;s on. I&#x2019;ve decided to use a slightly modified version of Brandon Grotesque Bold. It&#x2019;s modern character and the small x-height really helped creating a distinguished logomark. It acts as a contrast to our fun and playful nature by not showing what we&#x2019;re all about at first sight. Just how a Wundert&#xFC;te works in real life. 
 
-<img class="post-img" src="../../assets/dist/wundertuete/img/wundertuete_logo_construction.png" alt="The final Logo" srcset="../../assets/dist/wundertuete/img/wundertuete_logo_construction-small.png 320w, ../../assets/dist/wundertuete/img/wundertuete_logo_construction-medium.png 640w, ../../assets/dist/wundertuete/img/wundertuete_logo_construction-large.png 1024w" sizes="(min-width: 31.25em) calc(100vw - 66.10169%), (min-width: 56.25em) calc(100vw - 49.15254%), calc(100vw - 83.05085%)">
+<img class="post-img" src="../../assets/dist/wundertuete/img/wundertuete_logo_construction.png" alt="The final Logo" srcset="../../assets/dist/wundertuete/img/wundertuete_logo_construction-small.png 320w, ../../assets/dist/wundertuete/img/wundertuete_logo_construction-medium.png 640w, ../../assets/dist/wundertuete/img/wundertuete_logo_construction-large.png 1024w, ../../assets/dist/wundertuete/img/wundertuete_logo_construction-large_x2.png 2x" sizes="(min-width: 31.25em) calc(100vw - 66.10169%), (min-width: 56.25em) calc(100vw - 49.15254%), calc(100vw - 83.05085%)">
 
 ## The colors
 
@@ -42,13 +43,13 @@ We chose two shades of blue for our main colors. Appropriately named Wunderblau 
 
 We also developed a striped pattern to serve as a background for some of our stationary e.g. Business Cards and Letterhead. 
 <figure>
-    <img src="../../assets/dist/wundertuete/img/wundertuete_stationary_1.jpg" alt="Stationary Design" class="post-img" srcset="../../assets/dist/wundertuete/img/wundertuete_stationary_1-small.jpg 320w, ../../assets/dist/wundertuete/img/wundertuete_stationary_1-medium.jpg 640w, ../../assets/dist/wundertuete/img/wundertuete_stationary_1-large.jpg 1024w" sizes="(min-width: 31.25em) calc(100vw - 66.10169%), (min-width: 56.25em) calc(100vw - 49.15254%), calc(100vw - 83.05085%)">
+    <img src="../../assets/dist/wundertuete/img/wundertuete_stationary_1.jpg" alt="Stationary Design" class="post-img" srcset="../../assets/dist/wundertuete/img/wundertuete_stationary_1-small.jpg 320w, ../../assets/dist/wundertuete/img/wundertuete_stationary_1-medium.jpg 640w, ../../assets/dist/wundertuete/img/wundertuete_stationary_1-large.jpg 1024w, ../../assets/dist/wundertuete/img/wundertuete_stationary_1-large_x2.jpg 2x" sizes="(min-width: 31.25em) calc(100vw - 66.10169%), (min-width: 56.25em) calc(100vw - 49.15254%), calc(100vw - 83.05085%)">
     <figcaption class="left-caption">Our stationary design showing the contrast between a clean and playful design</figcaption>
 </figure>
 
 Confetti has been chosen to accompany our fun nature and to loosen up the contrasts created by the clean type and the calm colors. 
 
-<img src="../../assets/dist/wundertuete/img/wundertuete_letterhead_mockup.jpg" alt="Our Letterhead" class="post-img" srcset="../../assets/dist/wundertuete/img/wundertuete_letterhead_mockup-small.jpg 320w, ../../assets/dist/wundertuete/img/wundertuete_letterhead_mockup-medium.jpg 640w, ../../assets/dist/wundertuete/img/wundertuete_letterhead_mockup-large.jpg 1024w" sizes="(min-width: 31.25em) calc(100vw - 66.10169%), (min-width: 56.25em) calc(100vw - 49.15254%), calc(100vw - 83.05085%)">
+<img src="../../assets/dist/wundertuete/img/wundertuete_letterhead_mockup.jpg" alt="Our Letterhead" class="post-img" srcset="../../assets/dist/wundertuete/img/wundertuete_letterhead_mockup-small.jpg 320w, ../../assets/dist/wundertuete/img/wundertuete_letterhead_mockup-medium.jpg 640w, ../../assets/dist/wundertuete/img/wundertuete_letterhead_mockup-large.jpg 1024w, ../../assets/dist/wundertuete/img/wundertuete_letterhead_mockup-large_x2.jpg 2x" sizes="(min-width: 31.25em) calc(100vw - 66.10169%), (min-width: 56.25em) calc(100vw - 49.15254%), calc(100vw - 83.05085%)">
 
 ## The Website
 
