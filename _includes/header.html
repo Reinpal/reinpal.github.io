@@ -24,7 +24,7 @@
               {% endif %}
             {% endfor %}
             <li class="separator"><span>Featured Work</span></li>
-            {% for post in site.categories['work'] %}
+            {% for post in site.categories['work'] limit:4 %}
               {% if post.client %}
               <li>
                 <a class="menu-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.client }}</a>

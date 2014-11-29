@@ -41,8 +41,10 @@ We chose two shades of blue for our main colors. Appropriately named Wunderblau 
 <img src="../../assets/dist/wundertuete/img/wundertuete_logo_schowcase.png" alt="The logo in its different colors" class="post-img" srcset="../../assets/dist/wundertuete/img/wundertuete_logo_schowcase-small.png 320w, ../../assets/dist/wundertuete/img/wundertuete_logo_schowcase-medium.png 640w, ../../assets/dist/wundertuete/img/wundertuete_logo_schowcase-large.png 1024w" sizes="(min-width: 31.25em) calc(100vw - 66.10169%), (min-width: 56.25em) calc(100vw - 49.15254%), calc(100vw - 83.05085%)">
 
 We also developed a striped pattern to serve as a background for some of our stationary e.g. Business Cards and Letterhead. 
-
-<img src="../../assets/dist/wundertuete/img/wundertuete_stationary_1.jpg" alt="Stationary Design" class="post-img" srcset="../../assets/dist/wundertuete/img/wundertuete_stationary_1-small.jpg 320w, ../../assets/dist/wundertuete/img/wundertuete_stationary_1-medium.jpg 640w, ../../assets/dist/wundertuete/img/wundertuete_stationary_1-large.jpg 1024w" sizes="(min-width: 31.25em) calc(100vw - 66.10169%), (min-width: 56.25em) calc(100vw - 49.15254%), calc(100vw - 83.05085%)">
+<figure>
+    <img src="../../assets/dist/wundertuete/img/wundertuete_stationary_1.jpg" alt="Stationary Design" class="post-img" srcset="../../assets/dist/wundertuete/img/wundertuete_stationary_1-small.jpg 320w, ../../assets/dist/wundertuete/img/wundertuete_stationary_1-medium.jpg 640w, ../../assets/dist/wundertuete/img/wundertuete_stationary_1-large.jpg 1024w" sizes="(min-width: 31.25em) calc(100vw - 66.10169%), (min-width: 56.25em) calc(100vw - 49.15254%), calc(100vw - 83.05085%)">
+    <figcaption class="left-caption">Our stationary design showing the contrast between a clean and playful design</figcaption>
+</figure>
 
 Confetti has been chosen to accompany our fun nature and to loosen up the contrasts created by the clean type and the calm colors. 
 

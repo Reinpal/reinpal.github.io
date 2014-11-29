@@ -259,3 +259,35 @@
 	width: 30px;
 	height: 30px;
 }
+
+/*------------------------------------*\
+    #POST-IMAGES
+\*------------------------------------*/
+
+.post-content figure {
+	position: relative;
+	margin: 0;
+}
+
+.left-caption {
+
+	@include breakpoint($large) {
+		position: absolute;
+		left: 0;
+		top: 10%;
+		padding-top: gutter(12);
+		width: span(3 of 12);
+		margin-left: -28%;
+		text-align: right;
+
+		&:before {
+			position: absolute;
+			top: 0;
+			height: 1px;
+			width: span(9 of 12);
+			background: black(0.2);
+			content: '';
+		}
+	}
+
+}
