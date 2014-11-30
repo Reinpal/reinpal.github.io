@@ -5,6 +5,7 @@ client: Wundertuete
 date: 2014-11-20 23:27:00
 permalink: /work/wundertuete
 type: Logo, Webdesign
+featured: true
 cover-image: ../../assets/dist/wundertuete/img/wundertuete_business_cards_rain-large.jpg
 cover-image-retina: ../../assets/dist/wundertuete/img/wundertuete_business_cards_rain-large_x2.jpg
 ---

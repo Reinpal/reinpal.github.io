@@ -24,12 +24,14 @@ header: black
   <section class="home-content">
     <h1>Welcome to my portfolio-site</h1>
     <p>I am currently looking for an intership from February/March 2015 onwards. If you think I'm the right guy for your team, send me an E-Mail!</p>
-    <h1 class="page-heading recent-entries"><span>Recent Work</span></h1>
+    <h1 class="page-heading recent-entries"><span>Featured Projects</span></h1>
 
     <div class="post-list">
 
       {% for post in site.categories['work'] %}
-        <article>
+        {% if post.featured == true %}
+
+        <article class="featured-post">
 
           <h2 class="post-list-header">
             <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
@@ -38,6 +40,23 @@ header: black
           <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }} | {{ post.categories }}</span>
           
         </article>
+        {% endif %}
+      {% endfor %}
+      <h1 class="page-heading recent-entries"><span>Recent Work</span></h1>
+      {% for post in site.categories['work'] %}
+        {% if post.featured == false %}
+
+        <article class="post">
+          
+          <h2 class="post-list-header">
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          </h2>
+          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }} | {{ post.categories }}</span>
+          <p>{{ post.excerpt }}</p>
+          
+        </article>
+
+        {% endif %}
       {% endfor %}
 
     </div>

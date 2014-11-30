@@ -25,7 +25,7 @@
             {% endfor %}
               <li class="separator"><span>Featured Work</span></li>
             {% for post in site.categories['work'] limit:4 %}
-              {% if post.client %}
+              {% if post.featured == true %}
               <li>
                 <a class="menu-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.client }}</a>
                 <span class="menu-link-desc">{{ post.title }}</span>

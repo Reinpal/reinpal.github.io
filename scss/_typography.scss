@@ -40,6 +40,7 @@ h1 {
 	color: white(1);
 }
 
+
 h1.page-heading {
 	margin: 1em 0;
 }
@@ -152,7 +153,7 @@ figcaption {
 
 }
 
-.post-list p{
+.post-list .featured-post p{
 	font-size: 0.875em;
 	margin: 0.704em 0;
 
@@ -162,6 +163,29 @@ figcaption {
 
 	@include breakpoint($large) {
 		font-size: 1.25em;
+	}	
+
+}
+
+.post-list .post .post-list-header {
+	font-size: 1em;
+
+	@include breakpoint($medium) {
+		font-size: 1.125em;
+	}
+}
+
+.post-list .post p {
+	font-size: 0.704em;
+	margin: 0.704em 0;
+	line-height: 1.4;
+
+	@include breakpoint($medium) {
+		font-size: 1em;
+	}
+
+	@include breakpoint($large) {
+		font-size: 1.125em;
 	}	
 
 }

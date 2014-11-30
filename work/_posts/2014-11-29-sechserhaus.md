@@ -5,7 +5,9 @@ client: sechserhaus
 date: 2014-11-29 13:40:00
 permalink: /work/sechserhaus
 type: Webdesign &amp; Development
+featured: false
 cover-image: ../../assets/dist/sechserhaus/img/sechserhaus_website_mockup_macbook-large.jpg
+cover-image-retina: ../../assets/dist/sechserhaus/img/sechserhaus_website_mockup_macbook-large_x2.jpg
 ---
 
 The website for the creative coworking-space sechserhaus was the main project while working with the awesome team at wundert&#xFC;te. The sechserhaus is located in the heart of Graz and offers various services for working in a creative environment. The project was commission by Heimo Lercher the founder of sechserhaus. 

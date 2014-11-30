@@ -74,21 +74,41 @@ body.no_scroll {
 
 }
 
-.post-list article {
+.post-list {
+	@include clearfix();
+}
+
+.post-list .featured-post {
 	padding-bottom: 1.666em;
 	margin-bottom: 1.666em;
-	border-bottom: 1px solid black(0.1);
+	//border-bottom: 1px solid black(0.1);
 
 	@include breakpoint($medium) {
 		padding-bottom: 2.221em;
 		margin-bottom: 2.221em;
 	}
 
-	& .post-meta {
+}
+
+.post-list .post {
+	@include span(6 of 6);
+
+	@include breakpoint($medium) {
+		@include span(3 of 6);
+		margin-bottom: gutter(6);
+
+		&:nth-child(odd) {
+			@include span(3 of 6 last);
+		}		
+	}
+
+
+}
+
+	.post-list .post-meta {
 		font-family: "freight-text-pro";
 		text-transform: none;
 	}
-}
 
 .profile-page {
 	width: span(12);
@@ -104,8 +124,12 @@ body.no_scroll {
 
 .signet {
 	position: relative;
-	width: span(4 of 12);
+	width: span(10 of 12);
 	margin: 0 auto;
+
+	@include breakpoint($medium) {
+		width: span(8 of 12);
+	}
 }
 
 .signet svg {
@@ -125,7 +149,7 @@ body.no_scroll {
 	position: relative;
 	width: 64px;
 	margin: 2.073em auto;
-	fill: black(0.1);
+	fill: black(0.8);
 }
 
 .email-me {
@@ -283,7 +307,7 @@ body.no_scroll {
 	}
 
 		@include breakpoint($large) {
-		width: span(25%);
+		width: span(20%);
 	}
 }
 
@@ -503,7 +527,12 @@ figure.animated:hover p {
 }
 
 .profile-page .post-title.name {
-	margin: 0 auto;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	margin-top: 1em;
+	margin-bottom: 0;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .avatar {
