@@ -353,7 +353,7 @@ body.no_scroll {
 	position: relative;
 	@include clearfix();
 	margin: 0 auto;
-	padding: 1em 0 4em;
+	padding: gutter(12) 0;
 	width: span(12 of 12);
 	max-width: $x-large;
 	list-style: none;
@@ -388,7 +388,7 @@ body.no_scroll {
 		img {
 			position: relative;
 			display: block;
-			min-height: 100%;
+			// min-height: 100%;
 			max-width: 100%;
 			opacity: 0.8;
 		}
@@ -551,6 +551,11 @@ figure.animated:hover p {
 	margin-bottom: 0;
 	margin-left: auto;
 	margin-right: auto;
+	font-size: 1.333em;
+
+	@include breakpoint($medium) {
+		font-size: 1.777em;
+	}
 }
 
 .avatar {

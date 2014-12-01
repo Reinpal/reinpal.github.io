@@ -5,6 +5,7 @@
 .footer-col-wrapper {
 	@include span(12 of 12);
 	@include clearfix();
+	margin-top: gutter(6);
 
 	@include breakpoint($large) {
 		width: span(10 of 12);
@@ -48,7 +49,7 @@
 .contact-list {
 	@include clearfix();
 	width: span(10 of 12);
-	margin: gutter(6) auto;
+	margin: gutter(10) auto;
 	padding: 0;
 	font-family: "proxima-nova";
 	font-size: 0.704em;
