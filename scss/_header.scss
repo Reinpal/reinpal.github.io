@@ -4,6 +4,7 @@
 
 .site-header {
 	@include container();
+  @include clearfix();
 	font-family: 'proxima-nova', sans-serif;
 }
 
@@ -67,10 +68,10 @@
 }
 
 .site-title  svg {
+  position: relative;
   width: 157px;
   height: 35px;
   fill: white(1);
-  pointer-events: none;
 
   @include breakpoint($medium) {
     width: 237px;
@@ -81,10 +82,6 @@
 
 .black .site-title svg {
   fill: black(0.8);
-}
-
-.site-title svg use {
-  pointer-events: none;
 }
 
 .menu-icon {
