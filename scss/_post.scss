@@ -141,23 +141,43 @@
 .project-info-wrapper {
 	position: absolute;
 	left: 50%;
-	transform: translate(-50%, -50%);
+	transform: translate(-50%, - gutter(2));
 	width: span(10 of 12);
-	bottom: gutter(12);
-	padding: 0 10px;
+	bottom: 0;
 	color: white(1);
 	z-index: 6;
+
+	@include breakpoint($medium) {
+		transform: translate(-50%, -50%);		
+	}
 }
 
+
 .client, .year, .collaborators, .type {
-	@include span(3 of 12);
+	@include span(4 of 12);
 	font-family: "proxima-nova";
 	font-weight: bold;
 	text-transform: uppercase;
+
+	@include breakpoint($medium) {
+		@include span(3 of 12);
+	}
+
+}
+
+.type {
+	@include span(5 of 12);
 }
 
 .collaborators {
-	@include span(5 of 12);
+@include span(12 of 12 last);
+margin-bottom: gutter(4);
+
+	@include breakpoint($medium) {
+		@include span(5 of 12);
+		margin-bottom: 0;
+	}
+
 }
 
 .client p, .year p, .collaborators p, .type p {
@@ -187,7 +207,13 @@
 }
 
 .year {
-	@include span(1 of 12 last);
+	@include span(3 of 12 last);
+	text-align: right;
+
+	@include breakpoint($medium) {
+		@include span(1 of 12 last);
+	}
+
 }
 
 .intro, .post-header .post-meta {

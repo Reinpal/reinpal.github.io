@@ -154,8 +154,8 @@ figcaption {
 }
 
 .post-list .featured-post p{
-	font-size: 0.875em;
-	margin: 0.704em 0;
+	font-size: 1em;
+	margin: 0.875em 0;
 
 	@include breakpoint($medium) {
 		font-size: 1.125em;
@@ -176,7 +176,7 @@ figcaption {
 }
 
 .post-list .post p {
-	font-size: 0.704em;
+	font-size: 0.875em;
 	margin: 0.704em 0;
 	line-height: 1.4;
 

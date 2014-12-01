@@ -48,10 +48,14 @@
 .contact-list {
 	@include clearfix();
 	width: span(10 of 12);
-	margin: 2.6em auto;
+	margin: gutter(6) auto;
 	padding: 0;
 	font-family: "proxima-nova";
 	font-size: 0.704em;
+
+	@include breakpoint($medium) {
+		margin: 2.6em auto;
+	}
 
 	@include breakpoint($large) {
 		margin: 3.69492% 0;
@@ -60,9 +64,16 @@
 
 .social-media-list {
 	@include container(12);
-	margin: 1.6em 0;
+	@include clearfix();
+	width: span(10 of 12);
+	margin: gutter(6) auto;
+	padding: 0;
 	vertical-align: middle;
 
+
+	@include breakpoint($medium) {
+		margin: 1.6em 0;
+	}
 }
 
 .social-media-list li, .contact-list li {
@@ -72,7 +83,6 @@
 
 .contact-list li {
 	display: block;
-	text-align: center;
 
 	@include breakpoint($medium) {
 		text-align: left;
@@ -84,20 +94,26 @@
 
 	& a {
 		display: block;
-		height: 16px;
+		height: 20px;
 	}
+
 }
 
 .icon {
 	display: block;
-	height: 16px;
+	height: 20px;
 }
 
 .footer-col .icon svg {
-	height: 1em;
-	width: 1em;
+	height: 1.25em;
+	width: 1.25em;
 	fill: black(0.2);
 	transition: fill 0.25s;
+	
+	@include breakpoint($medium) {
+		height: 1em;
+		width: 1em;
+	}
 }
 
 .social-media-list li a:hover .icon svg {

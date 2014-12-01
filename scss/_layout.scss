@@ -46,7 +46,7 @@ body.no_scroll {
 	position: relative;
 	font-family: "freight-text-pro";
 	font-weight: normal;
-	font-size: 1.333em;
+	font-size: 1.125em;
 	font-style: italic;
 	text-transform: none;
 	text-align: center;
@@ -54,6 +54,7 @@ body.no_scroll {
 	margin: 1.666em 0;
 
 	@include breakpoint($medium) {
+		font-size: 1.333em;
 		margin: 2.221em 0;
 	}
 
@@ -92,10 +93,10 @@ body.no_scroll {
 
 .post-list .post {
 	@include span(6 of 6);
+	margin-bottom: gutter(4);
 
 	@include breakpoint($medium) {
 		@include span(3 of 6);
-		margin-bottom: gutter(6);
 
 		&:nth-child(odd) {
 			@include span(3 of 6 last);
@@ -105,10 +106,10 @@ body.no_scroll {
 
 }
 
-	.post-list .post-meta {
-		font-family: "freight-text-pro";
-		text-transform: none;
-	}
+.post-list .post-meta {
+	font-family: "freight-text-pro";
+	text-transform: none;
+}
 
 .profile-page {
 	width: span(12);
@@ -210,6 +211,8 @@ body.no_scroll {
 }
 
 .related-post-content {
+	font-size: 1em;
+
 	@include breakpoint($medium) {
 		width: span(8 of 12);
 	}
@@ -217,8 +220,15 @@ body.no_scroll {
 
 .related-post-title {
 	position: relative;
-	padding-top: 0.704em;
-	padding-bottom: 2.073em;
+	font-size: 0.875em;
+	padding-top: .5em;
+	padding-bottom: 1em;
+
+	@include breakpoint($medium) {
+		font-size: 1.375em;
+		padding-top: 0.704em;
+		padding-bottom: 2.073em;
+	}
 
 	&:before {
 		position: absolute;
@@ -227,6 +237,14 @@ body.no_scroll {
 		width: span(3 of 12);
 		top: 0;
 		background: white(1);
+	}
+}
+
+.related-post-header {
+	font-size: 1.125em;
+
+	@include breakpoint($medium) {
+		font-size: 1.555em;
 	}
 }
 
