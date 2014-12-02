@@ -78,7 +78,7 @@
 
 .cover-image--Tenato {
 	&:before {
-		background: linear-gradient(135deg, rgba(#54b7a3, 0.8) 0%, rgba(#00b789, 0.8) 100%);
+		background: linear-gradient(135deg, rgba(#54b7a3, .25) 0%, rgba(#00b789, .8) 100%);
 	}
 
 	&:after {
@@ -88,7 +88,7 @@
 
 .cover-image--Wundertuete {
 	&:before {
-		background: linear-gradient(135deg, rgba(0, 155, 195, 0.8) 0%, rgba(95, 195, 224, 0.8) 100%);
+		background: linear-gradient(135deg, rgba(0, 155, 195, .5) 0%, rgba(95, 195, 224, .8) 100%);
 	}
 
 	&:after {
@@ -96,6 +96,15 @@
 	}
 }
 
+.cover-image--sechserhaus {
+	&:before {
+		background: linear-gradient(135deg, rgba(192, 13, 13, .25) 0%, rgba(192, 13, 13, .8) 100%);
+	}
+
+	&:after {
+		background: white(0);
+	}
+}
 
 /*------------------------------------*\
     #POST/PROJECT-TITLE
