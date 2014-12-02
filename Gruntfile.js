@@ -63,16 +63,16 @@ module.exports = function(grunt) {
         options: {
           sizes: [{
             name: "small",
-            width: 320
+            width: 250
           },{
             name: "medium",
-            width: 640
+            width: 500
           },{
             name: "large",
-            width: 1024
+            width: 700
           }, {
             name: "large",
-            width: 1920,
+            width: 1400,
             suffix: "_x2"
           }]
         },
@@ -90,28 +90,29 @@ module.exports = function(grunt) {
         options: {
           srcset: [{
             suffix: '-small',
-            value: '320w'
+            value: '250w'
           },{
             suffix: '-medium',
-            value: '640w'
+            value: '500w'
           },{
             suffix: '-large',
-            value: '1024w'
-          }, {
-            suffix: '-large_x2',
-            value: '2x'
+            value: '700w'
+
+          // }, {
+          //   suffix: '-large_x2',
+          //   value: '2x'
           }],
           sizes: [{
             selector: '.post-img',
             sizeList: [{
               cond: 'min-width: 31.25em',
-              size: 'calc(100vw - 66.10169%)'
+              size: '66vw'
             },{
               cond: 'min-width: 56.25em',
-              size: 'calc(100vw - 49.15254%)'
+              size: '50vw'
             },{
               cond: 'default',
-              size: 'calc(100vw - 83.05085%)'
+              size: '100vw'
             }]
           }]
         },

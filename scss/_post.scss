@@ -64,7 +64,7 @@
 	}
 }
 
-.cover-image--home {
+.cover-image--home, .cover-image--About {
 
 	&:before {
 		background: linear-gradient(to bottom, white(0) 0%, white(0.3) 25%, white(1) 100%);

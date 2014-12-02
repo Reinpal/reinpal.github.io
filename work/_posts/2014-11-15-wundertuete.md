@@ -34,29 +34,29 @@ Next step was to come up with a Corporate Design. So we all started to think of 
 
 My personal take on the Logo was to create a strong mark which would work on it&#x2019;s on. I&#x2019;ve decided to use a slightly modified version of Brandon Grotesque Bold. It&#x2019;s modern character and the small x-height really helped creating a distinguished logomark. It acts as a contrast to our fun and playful nature by not showing what we&#x2019;re all about at first sight. Just how a Wundert&#xFC;te works in real life. 
 
-<img class="post-img" src="../../assets/dist/wundertuete/img/wundertuete_logo_construction.png" alt="The final Logo" srcset="../../assets/dist/wundertuete/img/wundertuete_logo_construction-small.png 320w, ../../assets/dist/wundertuete/img/wundertuete_logo_construction-medium.png 640w, ../../assets/dist/wundertuete/img/wundertuete_logo_construction-large.png 1024w, ../../assets/dist/wundertuete/img/wundertuete_logo_construction-large_x2.png 2x" sizes="(min-width: 31.25em) calc(100vw - 66.10169%), (min-width: 56.25em) calc(100vw - 49.15254%), calc(100vw - 83.05085%)">
+<img class="post-img" src="../../assets/dist/wundertuete/img/wundertuete_logo_construction.png" alt="The final Logo" srcset="../../assets/dist/wundertuete/img/wundertuete_logo_construction-small.png 250w, ../../assets/dist/wundertuete/img/wundertuete_logo_construction-medium.png 500w, ../../assets/dist/wundertuete/img/wundertuete_logo_construction-large.png 700w" sizes="(min-width: 31.25em) 66vw, (min-width: 56.25em) 50vw, 100vw">
 
 ## The colors
 
 We chose two shades of blue for our main colors. Appropriately named Wunderblau and Wunderhellblau. Blue was our choice because it stands, again contrasting to our playful nature, for calmness but also for trust and friendship and the slight turquoise tint represents communication. The Wunderblau is used as our main color whereas the Wunderhellblau acts as an accent-color.
 
-<img src="../../assets/dist/wundertuete/img/wundertuete_logo_schowcase.png" alt="The logo in its different colors" class="post-img" srcset="../../assets/dist/wundertuete/img/wundertuete_logo_schowcase-small.png 320w, ../../assets/dist/wundertuete/img/wundertuete_logo_schowcase-medium.png 640w, ../../assets/dist/wundertuete/img/wundertuete_logo_schowcase-large.png 1024w" sizes="(min-width: 31.25em) calc(100vw - 66.10169%), (min-width: 56.25em) calc(100vw - 49.15254%), calc(100vw - 83.05085%)">
+<img src="../../assets/dist/wundertuete/img/wundertuete_logo_schowcase.png" alt="The logo in its different colors" class="post-img" srcset="../../assets/dist/wundertuete/img/wundertuete_logo_schowcase-small.png 250w, ../../assets/dist/wundertuete/img/wundertuete_logo_schowcase-medium.png 500w, ../../assets/dist/wundertuete/img/wundertuete_logo_schowcase-large.png 700w" sizes="(min-width: 31.25em) 66vw, (min-width: 56.25em) 50vw, 100vw">
 
 We also developed a striped pattern to serve as a background for some of our stationary e.g. Business Cards and Letterhead. 
 <figure>
-    <img src="../../assets/dist/wundertuete/img/wundertuete_stationary_1.jpg" alt="Stationary Design" class="post-img" srcset="../../assets/dist/wundertuete/img/wundertuete_stationary_1-small.jpg 320w, ../../assets/dist/wundertuete/img/wundertuete_stationary_1-medium.jpg 640w, ../../assets/dist/wundertuete/img/wundertuete_stationary_1-large.jpg 1024w, ../../assets/dist/wundertuete/img/wundertuete_stationary_1-large_x2.jpg 2x" sizes="(min-width: 31.25em) calc(100vw - 66.10169%), (min-width: 56.25em) calc(100vw - 49.15254%), calc(100vw - 83.05085%)">
+    <img src="../../assets/dist/wundertuete/img/wundertuete_stationary_1.jpg" alt="Stationary Design" class="post-img" srcset="../../assets/dist/wundertuete/img/wundertuete_stationary_1-small.jpg 250w, ../../assets/dist/wundertuete/img/wundertuete_stationary_1-medium.jpg 500w, ../../assets/dist/wundertuete/img/wundertuete_stationary_1-large.jpg 700w" sizes="(min-width: 31.25em) 66vw, (min-width: 56.25em) 50vw, 100vw">
     <figcaption class="left-caption">Our stationary design showing the contrast between a clean and playful design</figcaption>
 </figure>
 
 Confetti has been chosen to accompany our fun nature and to loosen up the contrasts created by the clean type and the calm colors. 
 
-<img src="../../assets/dist/wundertuete/img/wundertuete_letterhead_mockup.jpg" alt="Our Letterhead" class="post-img" srcset="../../assets/dist/wundertuete/img/wundertuete_letterhead_mockup-small.jpg 320w, ../../assets/dist/wundertuete/img/wundertuete_letterhead_mockup-medium.jpg 640w, ../../assets/dist/wundertuete/img/wundertuete_letterhead_mockup-large.jpg 1024w, ../../assets/dist/wundertuete/img/wundertuete_letterhead_mockup-large_x2.jpg 2x" sizes="(min-width: 31.25em) calc(100vw - 66.10169%), (min-width: 56.25em) calc(100vw - 49.15254%), calc(100vw - 83.05085%)">
+<img src="../../assets/dist/wundertuete/img/wundertuete_letterhead_mockup.jpg" alt="Our Letterhead" class="post-img" srcset="../../assets/dist/wundertuete/img/wundertuete_letterhead_mockup-small.jpg 250w, ../../assets/dist/wundertuete/img/wundertuete_letterhead_mockup-medium.jpg 500w, ../../assets/dist/wundertuete/img/wundertuete_letterhead_mockup-large.jpg 700w" sizes="(min-width: 31.25em) 66vw, (min-width: 56.25em) 50vw, 100vw">
 
 ## The Website
 
 After we&#x2019;ve all settled on our Corporate Design it was that much easier to put together a Corporate Website according to our own Design-Manual. My Job was to design and develop the Website with the help of Felix and Thomas (the three of us formed the infamous Team-Web of Wundert&#xFC;te). 
 
-<img src="../../assets/dist/wundertuete/img/wundertuete_website_mockup.jpg" alt="Mockup of our Website" class="post-img" srcset="../../assets/dist/wundertuete/img/wundertuete_website_mockup-small.jpg 320w, ../../assets/dist/wundertuete/img/wundertuete_website_mockup-medium.jpg 640w, ../../assets/dist/wundertuete/img/wundertuete_website_mockup-large.jpg 1024w" sizes="(min-width: 31.25em) calc(100vw - 66.10169%), (min-width: 56.25em) calc(100vw - 49.15254%), calc(100vw - 83.05085%)">
+<img src="../../assets/dist/wundertuete/img/wundertuete_website_mockup.jpg" alt="Mockup of our Website" class="post-img" srcset="../../assets/dist/wundertuete/img/wundertuete_website_mockup-small.jpg 250w, ../../assets/dist/wundertuete/img/wundertuete_website_mockup-medium.jpg 500w, ../../assets/dist/wundertuete/img/wundertuete_website_mockup-large.jpg 700w" sizes="(min-width: 31.25em) 66vw, (min-width: 56.25em) 50vw, 100vw">
 
 We used Wordpress as a Content Management System and decided to build a responsive and retina-ready Site. The use of large images and minimal typography are setting focus on the content and by putting everything onto one page we eliminated the need for unnecessary hierarchical elements. You can see the site live right here. 
 

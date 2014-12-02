@@ -535,6 +535,17 @@ figure.animated:hover p {
 	}
 }
 
+.btn--black {
+	color: black(.8);
+	border-color: black(.8);
+
+	&:hover {
+		color: white(1);
+		background: black(.8);
+		border-color: black(.8);
+	}
+}
+
 /*------------------------------------*\
     #ABOUT-SECTION
 \*------------------------------------*/
@@ -552,6 +563,7 @@ figure.animated:hover p {
 	margin-left: auto;
 	margin-right: auto;
 	font-size: 1.333em;
+	color: black(.8);
 
 	@include breakpoint($medium) {
 		font-size: 1.777em;
@@ -571,7 +583,7 @@ figure.animated:hover p {
 }
 
 .job-description {
-	color: white(1);
+	color: black(.8);
 	font-style: italic;
 	margin-top: 0;
 	margin-bottom: 0.875em;
