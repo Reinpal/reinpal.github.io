@@ -23,4 +23,12 @@
 		document.createElement( "picture" );
 	</script>
 	<script src="{{ "/vendor/js/picturefill.js" | prepend: site.baseurl }}" async></script>
+  <style>
+  .wf-loading h1, .wf-loading p {
+    visibility: hidden;
+  }
+  .wf-active h1, .wf-active p {
+    visibility: visible;
+  }
+</style>
 </head>
