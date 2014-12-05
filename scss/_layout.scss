@@ -418,6 +418,17 @@ body.no_scroll {
 
 }
 
+.grid figure:before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	content: '';
+	width: 100%;
+	height: 100%;
+	background: black(.3);
+	z-index: 4;
+}
+
 .grid figure figcaption::before,
 .grid figure figcaption::after {
 	pointer-events: none;
@@ -430,6 +441,7 @@ body.no_scroll {
 	left: 0;
 	width: 100%;
 	height: 100%;
+	z-index: 6;
 }
 
 /* Anchor will cover the whole item by default */
@@ -488,13 +500,19 @@ figure.animated h2 {
 
     &:after {
 			@include centerer();
-			top: 200%;
+			top: 135%;
 			width: 25%;
 			height: 3px;
 			background: #fff;
 			content: '';
 			opacity: 0;
 			transition: opacity .5s;
+    }
+
+    @include breakpoint($large) {
+    	&:after {
+    		top: 200%;
+    	}
     }
 }
  
@@ -507,10 +525,14 @@ figure.animated p {
     position: absolute;
     bottom: 0;
     left: 0;
-    padding: 2em;
+    padding: 1em;
     width: 100%;
     opacity: 0;
     transform: translate3d(0,10px,0);
+
+    @include breakpoint($large) {
+    	padding: 2em;
+    }
 }
 
 figure.animated:hover h2:after {
