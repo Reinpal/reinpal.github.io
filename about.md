@@ -21,4 +21,4 @@ Webdesign and Development came into my life in 2009 during Business School with 
 
 In 2012 I started studying Information Design at FH Joanneum in Graz. Where I not only have the opportunity to sharpen my skills with moving images and code, but also to dive into other fields of design to round of my skillset as a designer. 
 
-These valuable experiences from various design fields have broadened my skill-set and that's why I'm interested in working with modern, interdisciplinary teams. I'm currently looking for an internship, so if you like what you see, please send me an E-Mail.
+These valuable experiences from various design fields have broadened my skill-set and that's why I'm interested in working with modern, interdisciplinary teams. I'm currently looking for an internship, so if you like what you see, please send me an [E-Mail](mailto:hello@stefanreinprecht.at).

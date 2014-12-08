@@ -317,14 +317,14 @@ body.no_scroll {
 .work-list {
 	position: relative;
 	@include container();
-	height: 25vh;
+ 	@include clearfix();
 
 	@include breakpoint($medium) {
-		height: 45vh;
+
 	}
 
 		@include breakpoint($large) {
-		height: 90vh;
+
 	}
 
 }
@@ -333,14 +333,16 @@ body.no_scroll {
 	position: relative;
 	float: left;
 	width: span(12 of 12);
-	height: 100%;
+	height: 25vh;
 
 	@include breakpoint($medium) {
 		width: span(50%);
+		height: 45vh;
 	}
 
 		@include breakpoint($large) {
-		width: span(33.3333%);
+		width: span(33.333333%);
+		height: 90vh;
 	}
 }
 

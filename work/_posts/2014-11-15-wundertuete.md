@@ -58,11 +58,11 @@ After we&#x2019;ve all settled on our Corporate Design it was that much easier t
 
 <img src="../../assets/dist/wundertuete/img/wundertuete_website_mockup.jpg" alt="Mockup of our Website" class="post-img" srcset="../../assets/dist/wundertuete/img/wundertuete_website_mockup-small.jpg 250w, ../../assets/dist/wundertuete/img/wundertuete_website_mockup-medium.jpg 500w, ../../assets/dist/wundertuete/img/wundertuete_website_mockup-large.jpg 700w" sizes="(min-width: 31.25em) 66vw, (min-width: 56.25em) 50vw, 100vw">
 
-We used Wordpress as a Content Management System and decided to build a responsive and retina-ready Site. The use of large images and minimal typography are setting focus on the content and by putting everything onto one page we eliminated the need for unnecessary hierarchical elements. You can see the site live right here. 
+We used Wordpress as a Content Management System and decided to build a responsive and retina-ready Site. The use of large images and minimal typography are setting focus on the content and by putting everything onto one page we eliminated the need for unnecessary hierarchical elements. You can see the site [live right here](http://diewundertuete.at). 
 
 ## The Project
 
-The biggest project on which we worked during the semester was a website for the creative coworking-space Sechserhaus in Graz. You can see the Website live right here and read a more detailed case study about the creation of it right here. 
+The biggest project on which we worked during the semester was a website for the creative coworking-space Sechserhaus in Graz. You can check out the live [Website right here](http://sechserhaus.net) and/or read a [more detailed case study]({% post_url 2014-11-29-sechserhaus %}) about the creation of it. 
 
 ## Summing up
 
