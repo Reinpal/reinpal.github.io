@@ -10,7 +10,7 @@ cover-image: ../../assets/dist/sechserhaus/img/sechserhaus_website_mockup_macboo
 cover-image-retina: ../../assets/dist/sechserhaus/img/sechserhaus_website_mockup_macbook-large_x2.jpg
 ---
 
-The website for the creative coworking-space sechserhaus was the main project while working with the awesome team at wundert&#xFC;te. The sechserhaus is located in the heart of Graz and offers various services for working in a creative environment. The project was commission by Heimo Lercher the founder of sechserhaus. 
+The website for the creative coworking-space sechserhaus was the main project while working with the awesome team at wundert&#xFC;te. Sechserhaus is located in the heart of Graz and offers various services for working in a creative environment. The project was commissioned by Heimo Lercher, the founder of sechserhaus. 
 
 <img class="post-img" src="../../assets/dist/sechserhaus/img/SH_Logo_quer.png" alt="Logo of sechserhaus" srcset="../../assets/dist/sechserhaus/img/SH_Logo_quer-small.png 250w, ../../assets/dist/sechserhaus/img/SH_Logo_quer-medium.png 500w, ../../assets/dist/sechserhaus/img/SH_Logo_quer-large.png 700w" sizes="(min-width: 31.25em) 66vw, (min-width: 56.25em) 50vw, 100vw">
 

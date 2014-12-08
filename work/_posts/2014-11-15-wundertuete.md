@@ -10,19 +10,19 @@ cover-image: ../../assets/dist/wundertuete/img/wundertuete_business_cards_rain-l
 cover-image-retina: ../../assets/dist/wundertuete/img/wundertuete_business_cards_rain-large_x2.jpg
 ---
 
-At FH-Joanneum one of the main objectives during the 4th semester is to found a &#x201E;virtual&#x201C; Design-Agency. To do so we gathered up in small groups and began to think about the rough direction in which we wanted to head.
+At FH Joanneum one of the main objectives during the 4th semester is to found a &#x201E;virtual&#x201C; Design-Agency. To do so we gathered up in small groups and began to think about the rough direction in which we wanted to head.
 
 The initial team-building session went pretty quickly as we all pretty much already knew with whom we wanted to work with. Our team consisted of 6 people, namely Barbara Gundl, Jakob Listabarth, Lukas Kollmann, Thomas Mirnig, Felix Pichler (Make sure to check out their portfolios too!) and myself. Our skill-set was set up pretty broadly so we decided to focus on Corporate- and Webdesign. We all knew where our strengths were, so it was kind of a no-brainer who was responsible for what.
 
 ## First things first
 
-Within the first few weeks we had to plan the strategy and other business related things e.g finding a target group, financial planning and of course the Corporate Identity of our company. These decision acted as a solid base for the future projects we wanted to tackle.
+Within the first few weeks we had to plan the strategy and other business related things e.g. finding a target group, financial planning and of course the Corporate Identity of our company. These decision acted as a solid base for the future projects we wanted to tackle.
  
 Given that we are a homogeneous bunch of creative and fun people, we wanted to reflect that into our identity. We came up with the name &#x201E;Wundert&#xFC;te&#x201C; which is German for &#x201E;jamboree bag&#x201C; or &#x201E;grab bag&#x201C;. 
 
 &gt;You never know what you&#x2019;re gonna get, but you&#x2019;ll love it.
 
-The key characteristics of a Wundert&#xFC;te which we applied to our own Corporate Identity. Individual solutions and concepts for every client was our premise. Combined with our mission statement &#x201E;We make Ideas visible&#x201C;, we made sure that our clients will get what they want, even if they didn&#x2019;t exactly knew what they were looking for.
+Individual solutions and concepts for every client was our premise. Combined with our mission statement &#x201E;We make Ideas visible&#x201C;, we made sure that our clients will get what they want, even if they didn&#x2019;t exactly knew what they were looking for.
 
 So there we were, Wundert&#xFC;te, a collective of young and aspiring designers just waiting to get our hands on everything related to Branding in combination with Webdesign and Development.
 
@@ -32,7 +32,7 @@ Next step was to come up with a Corporate Design. So we all started to think of 
 
 ## The Logo
 
-My personal take on the Logo was to create a strong mark which would work on it&#x2019;s on. I&#x2019;ve decided to use a slightly modified version of Brandon Grotesque Bold. It&#x2019;s modern character and the small x-height really helped creating a distinguished logomark. It acts as a contrast to our fun and playful nature by not showing what we&#x2019;re all about at first sight. Just how a Wundert&#xFC;te works in real life. 
+My personal take on the Logo was to create a strong mark which would work on it&#x2019;s own. I&#x2019;ve decided to use a slightly modified version of Brandon Grotesque Bold. It&#x2019;s modern character and the small x-height really helped creating a distinguished logomark. It acts as a contrast to our fun and playful nature by not showing what we&#x2019;re all about at first sight. Just how a Wundert&#xFC;te works in real life. 
 
 <img class="post-img" src="../../assets/dist/wundertuete/img/wundertuete_logo_construction.png" alt="The final Logo" srcset="../../assets/dist/wundertuete/img/wundertuete_logo_construction-small.png 250w, ../../assets/dist/wundertuete/img/wundertuete_logo_construction-medium.png 500w, ../../assets/dist/wundertuete/img/wundertuete_logo_construction-large.png 700w" sizes="(min-width: 31.25em) 66vw, (min-width: 56.25em) 50vw, 100vw">
 
