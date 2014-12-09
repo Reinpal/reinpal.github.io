@@ -20,7 +20,7 @@ Within the first few weeks we had to plan the strategy and other business relate
  
 Given that we are a homogeneous bunch of creative and fun people, we wanted to reflect that into our identity. We came up with the name &#x201E;Wundert&#xFC;te&#x201C; which is German for &#x201E;jamboree bag&#x201C; or &#x201E;grab bag&#x201C;. 
 
->You never know what you&#x2019;re gonna get, but you&#x2019;ll love it.
+&gt;You never know what you&#x2019;re gonna get, but you&#x2019;ll love it.
 
 Individual solutions and concepts for every client was our premise. Combined with our mission statement &#x201E;We make Ideas visible&#x201C;, we made sure that our clients will get what they want, even if they didn&#x2019;t exactly knew what they were looking for.
 
@@ -62,14 +62,14 @@ We used Wordpress as a Content Management System and decided to build a responsi
 
 ### The Project
 
-The biggest project on which we worked during the semester was a website for the creative coworking-space Sechserhaus in Graz. You can check out the live [Website right here](http://sechserhaus.net) and/or read a [more detailed case study]({% post_url 2014-11-29-sechserhaus %}) about the creation of it. 
+The biggest project on which we worked during the semester was a website for the creative coworking-space Sechserhaus in Graz. You can check out the live [Website right here](http://sechserhaus.net) and/or read a [more detailed case study]({{ site.baseurl }}/work/sechserhaus) about the creation of it. 
 
 ### Summing up
 
 Working together with a bunch of creative people from different fields definitely helped me gain invaluable experience concerning working in an interdisciplinary design team. We could all share our expertise and learn from each other. That overlap of our mixed skills made it possible to let go of old-fashioned design workflows and establish a more modern and fresh approach to Corporate and Webdesign. This not also meant that we could build better products but also helped me gain a lot of insight of how to work as a small and flexible team in the design industry. 
 
->We celebrate Ideas.
->
->We celebrate beautiful things.
->
->We celebrate the moment.
+&gt;We celebrate Ideas.
+&gt;
+&gt;We celebrate beautiful things.
+&gt;
+&gt;We celebrate the moment.
