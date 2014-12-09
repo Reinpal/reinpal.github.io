@@ -251,18 +251,15 @@ nav.nav--is-expanded .navigation {
   }
 
   &:after {
-    @include centerer();
-    height: 1px;
-    width: span(4 of 12);
-    background: black(0.1);
-    content: '';
+
   }
 
   & span {
     position: relative;
     z-index: 6;
-    padding: 0.704em;
-    background: white(.9);
+    padding: 0.5em;
+    border-top: 1px solid black(.1);
+    border-bottom: 1px solid black(.1);
   }
 
 }
