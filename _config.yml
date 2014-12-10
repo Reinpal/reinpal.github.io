@@ -4,7 +4,7 @@ email: hello@stefanreinprecht.at
 description: > # The Portfolio-Site of Stefan Reinprecht. 
   I make Websites and Films. 
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://localhost:4000" # the base hostname & protocol for your site
+url: "http://stefanreinprecht.at" # the base hostname & protocol for your site
 twitter_username: reinpal
 github_username:  reinpal
 behance_username:  StefanReinprecht
@@ -26,6 +26,9 @@ markdown: kramdown
 
 sass:
   sass_dir: scss
+
+gems:
+  - jekyll-sitemap
 
 exclude: [
   .gitignore,
