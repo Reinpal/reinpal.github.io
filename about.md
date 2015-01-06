@@ -9,11 +9,11 @@ cover-image: "../../assets/dist/general/img/bg_home_2-large.jpg"
 header: black
 ---
 
-Hello! My name is Stefan Reinprecht and I’m an interdisciplinary  designer from Graz, Austria. I'm really enthusiastic about webdesign and filmmaking, if you're like me, it would be nice if we could work together. 
+Hello! My name is Stefan Reinprecht and I’m an interdisciplinary designer from Graz, Austria. I'm really enthusiastic about webdesign and filmmaking, if you're like me, it would be nice if we could work together. 
 
 ### My story
 
-The first time I set foot into the design-field was when I started skateboarding as a teenager. We made logos for our crew and back then crappily filmed our crappy tricks, you gotta start somewhere I guess. The experiences I’ve made while filming is where my love for the moving image comes from. Since then I pretty much always held a camera in my hands. 
+The first time I set foot into the design-field was when I started skateboarding as a teenager. We made logos for our crew and crappily filmed our crappy tricks. You gotta start somewhere I guess. The experiences I’ve made while filming is where my love for the moving image comes from. Since then I pretty much always held a camera in my hands. 
 
 Webdesign and Development came into my life in 2009 during Business School with Information Technology. With technology moving at an unparalleled pace, there's more need than ever to have an appropriate web appearance. And I want to help companies to achieve that.
 

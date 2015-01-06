@@ -96,20 +96,6 @@
  		$('icon').blur(); //deselect icon when nav is hidden
  	}
 
- 	//keyboard shortcuts
- 	$('body').keydown(function(e) {
- 		if($('nav .icon').is(':focus')) {
- 			if (e.keyCode === 13 || e.keyCode === 32) {
- 				showHideNav();
- 				e.preventDefault();
- 			}
- 		}
- 		if (e.keyCode === 27 || e.keyCode === 77) {
- 			showHideNav();
- 			e.preventDefault();
- 		}
- 	})
-
  		var anchor = document.querySelectorAll('.menu-icon');
     
     [].forEach.call(anchor, function(anchor){
@@ -126,5 +112,14 @@
         }
       }
     }); 
+
+    var title = document.getElementsByTagName("title")[0].innerHTML;
+
+    $(window).blur(function(){
+      document.title = "Make sure to open this...";
+    });
+    $(window).focus(function(){
+      document.title = title;
+    });
 
 });
