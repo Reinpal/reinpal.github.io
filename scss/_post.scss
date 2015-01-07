@@ -65,6 +65,7 @@
 }
 
 .cover-image--home, .cover-image--About {
+	background-position: center 20%;
 
 	&:before {
 		background: linear-gradient(to bottom, white(0) 0%, white(0.3) 25%, white(1) 100%);

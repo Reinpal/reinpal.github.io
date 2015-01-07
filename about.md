@@ -2,10 +2,11 @@
 layout: about
 title: About
 desc: Find out more about myself
+meta: My name is Stefan Reinprecht and I’m an interdisciplinary designer from Graz, Austria. I'm really enthusiastic about webdesign and filmmaking.
 job-desc: Interdisciplinary Designer
 permalink: /about/
 avatar: "https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xpf1/v/t1.0-1/c0.38.320.320/p320x320/10154519_10203391891626507_1625131595_n.jpg?oh=45e0ff57e47b2ddda4bd450e5c7290aa&oe=54E71676&__gda__=1427567812_bf16b38e211db516adc185421a318e78"
-cover-image: "../../assets/dist/general/img/bg_home_2-large.jpg"
+cover-image: "../../assets/dist/general/img/bg_home3-large_x2.jpg"
 header: black
 ---
 
