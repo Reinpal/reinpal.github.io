@@ -1,7 +1,7 @@
 ---
 layout: default
 header: black
-meta: I’m an interdisciplinary designer from Graz, Austria. This is my online–portfolio, where you can find an overview of my work or find out more about me.
+meta: My name is Stefan Reinprecht and I’m an interdisciplinary designer from Graz, Austria. I'm really enthusiastic about webdesign and development.
 ---
 
 <div class="home">
@@ -21,10 +21,8 @@ meta: I’m an interdisciplinary designer from Graz, Austria. This is my online�
     </header>
   </section>
 
-
   <section class="home-content">
-    <h1>Welcome to my portfolio-site</h1>
-    <p>Here, you can find an <a target="_blank" href="{{ site.baseurl }}/work">overview of my work</a> or find out more <a target="_blank" href="{{ site.baseurl }}/about">about me.</a> I am currently looking for an intership from February/March 2015 onwards. If you think I'm the right guy for your team, send me an <a href="mailto:hello@stefanreinprecht.at">E-Mail!</a></p>
+    <p>This is some of <a target="_blank" href="{{ site.baseurl }}/work">the awesome stuff</a> I helped build. Currently intern as a front-end developer at <a href="http://engarde.net" target="_blank">En Garde.</a> Curious? Find out more <a target="_blank" href="{{ site.baseurl }}/about">about me.</a> </p>
     <h1 class="page-heading recent-entries"><span>Featured Projects</span></h1>
 
     <div class="post-list">
@@ -38,12 +36,31 @@ meta: I’m an interdisciplinary designer from Graz, Austria. This is my online�
             <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
           </h2>
           <p>{{ post.excerpt }}</p>
-          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }} | {{ post.categories }}</span>
+          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }} in <a href="{{ site.baseurl }}/{{ post.categories }}">{{ post.categories }}</a></span>
           
         </article>
         {% endif %}
       {% endfor %}
       </div>
+      <!-- <h1 class="page-heading recent-entries"><span>From the Blog</span></h1>
+      <div class="recent-posts">
+      {% for post in site.categories['work'] limit:2 %}
+        {% if post.featured == false %}
+
+        <article class="post">
+          
+          <h2 class="post-list-header">
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          </h2>
+          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }} in <a href="{{ site.baseurl }}/{{ post.categories }}">{{ post.categories }}</a></span>
+          <p>{{ post.excerpt }}</p>
+          
+        </article>
+
+        {% endif %}
+      {% endfor %}
+      </div> -->
+
       <h1 class="page-heading recent-entries"><span>Recent Work</span></h1>
       <div class="recent-posts">
       {% for post in site.categories['work'] %}
@@ -54,7 +71,7 @@ meta: I’m an interdisciplinary designer from Graz, Austria. This is my online�
           <h2 class="post-list-header">
             <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
           </h2>
-          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }} | {{ post.categories }}</span>
+          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }} in <a href="{{ site.baseurl }}/{{ post.categories }}">{{ post.categories }}</a></span>
           <p>{{ post.excerpt }}</p>
           
         </article>

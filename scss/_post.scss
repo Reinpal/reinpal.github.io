@@ -16,6 +16,10 @@
 
 }
 
+.home .post-header {
+	height: 75vh;
+}
+
 .post-header {
 	position: relative;
 	height: 90vh;
@@ -140,6 +144,10 @@
 		font-family: "freight-text-pro";
 		font-weight: normal;
 		text-transform: none;
+
+		a {
+			color: white;
+		}
 	}
 }
 

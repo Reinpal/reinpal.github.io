@@ -116,7 +116,7 @@
     var title = document.getElementsByTagName("title")[0].innerHTML;
 
     $(window).blur(function(){
-      document.title = "Make sure to open this...";
+      document.title = "Make sure to open this";
     });
     $(window).focus(function(){
       document.title = title;

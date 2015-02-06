@@ -33,7 +33,7 @@ body.no_scroll {
 	margin: 0 auto;
 
 	@include breakpoint($medium) {
-		width: span(8 of 12);
+		width: span(10 of 12);
 	}
 
 	@include breakpoint($large) {
@@ -87,6 +87,11 @@ body.no_scroll {
 	padding-bottom: 1.666em;
 	margin-bottom: 1.666em;
 	//border-bottom: 1px solid black(0.1);
+
+	&:last-child {
+		padding-bottom: 0;
+		margin-bottom: 0;
+	}
 
 	@include breakpoint($medium) {
 		padding-bottom: 2.221em;
@@ -626,10 +631,22 @@ figure.animated:hover p {
 	margin-top: 0.875em;
 }
 
-.job-description {
+.job-description, .social-links {
 	color: black(.8);
 	font-style: italic;
 	margin-top: 0;
-	margin-bottom: 0.875em;
+	margin-bottom: 0.4em;
 	z-index: 6;
+}
+
+.social-links {
+	font-size: 1em;
+	margin-bottom: 1.333em;
+	a {
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
 }

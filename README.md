@@ -1,4 +1,4 @@
 reinpal.github.io
 =================
 
-My personal Website
+My personal portfolio Website
