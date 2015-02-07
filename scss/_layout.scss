@@ -387,7 +387,6 @@ body.no_scroll {
 		overflow: hidden;
 		margin: 0;
 		width: span(12 of 12);
-		background: #3085a3;
 		text-align: center;
 		cursor: pointer;
 
@@ -412,7 +411,7 @@ body.no_scroll {
 			display: block;
 			// min-height: 100%;
 			max-width: 100%;
-			opacity: 0.8;
+			opacity: 1;
 		}
 		
 		figcaption {
@@ -434,6 +433,10 @@ body.no_scroll {
 	height: 100%;
 	background: black(.3);
 	z-index: 4;
+}
+
+.grid__portfolio figure:before {
+	background: none;
 }
 
 .grid figure figcaption::before,
@@ -550,6 +553,68 @@ figure.animated:hover figcaption::before ,
 figure.animated:hover p {
     opacity: 1;
     transform: translate3d(0,0,0);
+}
+
+.grid__portfolio {
+	figure{
+		width: span(6 of 12);
+		height: 0;
+		padding-bottom: 39%;
+		opacity: .9;
+
+		img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			margin: auto;
+			min-width: 100%;
+			min-height: 100%;
+			overflow-x: hidden;
+		}
+
+		@include breakpoint($medium) {
+			width: 50%;
+			padding-bottom: 39%;
+
+			&:nth-child(2n + 0) {
+				float: right;
+			}
+		}
+
+		@include breakpoint($middle) {
+			width: 33.333%;
+			padding-bottom: 26%;
+
+			&:nth-child(2n + 0) {
+				float: right;
+			}
+		}
+
+		@include breakpoint($large) {
+			width: 50%;
+			padding-bottom: 39%;
+
+			&:nth-child(3n + 0) {
+				float: right;
+			}
+		}
+
+		@include breakpoint($x-large) {
+			width: 33.333%;
+			padding-bottom: 26%;
+
+			&:nth-child(3n + 0) {
+				float: right;
+			}
+		}
+	}
+}
+
+.portfolio-item-link {
+	width: 100%;
+	height: 100%;
 }
 
 

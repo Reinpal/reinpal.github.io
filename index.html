@@ -80,6 +80,24 @@ meta: My name is Stefan Reinprecht and I’m an interdisciplinary designer from 
       {% endfor %}
       </div>
     </div>
+
+    <h1 class="page-heading recent-entries"><span>From Behance</span></h1>
+    <div id="portfolio" class="grid grid__portfolio">
+      <script id="portfolio-template" type="text/x-handlebars-template">
+      {% raw %}
+      {{#each projects}}
+        <figure class="portfolio-grid-item animated">
+          <a class="portfolio-item-link" href="{{this.url}}" target="_blank">
+          <img src="{{this.covers.[404]}}" alt="{{this.name}}" >
+          <figcaption>
+              <p>{{this.name}}</p>
+          </figcaption>
+          </a>
+        </figure>
+      {{/each}}
+      {% endraw %}
+      </script>
+  </div>
   </section>
   
 </div>
