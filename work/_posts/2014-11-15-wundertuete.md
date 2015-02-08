@@ -4,6 +4,10 @@ title: Logo and Website for a unique and playful Design Agency
 client: Wundertuete
 date: 2014-11-20 23:27:00
 permalink: /work/wundertuete
+tags: 
+- logo
+- webdesign
+- branding
 type: Logo, Webdesign
 featured: true
 cover-image: ../../assets/dist/wundertuete/img/wundertuete_business_cards_rain-large.jpg

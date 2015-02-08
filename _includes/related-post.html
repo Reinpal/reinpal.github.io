@@ -1,19 +1,31 @@
 <section class="related-post">
 
-  {% for post in site.related_posts limit:1 %}
+  {% if page.next.url %}
+  <div class="cover-image cover-image--{{ page.next.client }}" style="background-image: url({{page.next.cover-image}})">
 
+    <div class="related-post-content">
+      <h4 class="related-post-title">Related Project</h4>
+    	<p class="related-post-meta">{{ page.next.client }}</p>
+    	<h2 class="related-post-header">
+        <a class="post-link" href="{{ page.next.url | prepend: site.baseurl }}">{{ page.next.title }}</a>
+      </h2>
+    </div>
+
+  </div>
+  {% else %}
+  {% for post in site.related_posts limit:1 offset:4 %}
   <div class="cover-image cover-image--{{ post.client }}" style="background-image: url({{post.cover-image}})">
 
     <div class="related-post-content">
       <h4 class="related-post-title">Related Project</h4>
-    	<p class="related-post-meta">{{post.client}}</p>
-    	<h2 class="related-post-header">
+      <p class="related-post-meta">{{ post.client }}</p>
+      <h2 class="related-post-header">
         <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
       </h2>
     </div>
 
   </div>
-
   {% endfor %}
+  {% endif %}
 
 </section>

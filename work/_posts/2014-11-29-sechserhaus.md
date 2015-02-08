@@ -4,6 +4,10 @@ title: Building a full-featured WordPress-Site
 client: sechserhaus
 date: 2014-11-29 13:40:00
 permalink: /work/sechserhaus
+tags:
+- webdesign
+- web-development
+- wordpress
 type: Webdesign &amp; Development
 featured: false
 cover-image: ../../assets/dist/sechserhaus/img/sechserhaus_website_mockup_macbook-large.jpg

@@ -3,7 +3,7 @@
   <meta name="viewport" content="width=device-width initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <title>{% if site.title %}{{ site.title }}{% endif %} {% if page.title %} | {{ page.title }}{% endif %}</title>
+  <title>{% if page.client %}{{ page.client }} | {% else %}{% if page.title %}{{ page.title }} | {% endif %}{% endif %}{% if site.title %}{{ site.title }}{% endif %} </title>
   <meta name="description" content="{% if page.meta %}{{ page.meta }}{% else %} My name is Stefan Reinprecht and I’m an interdisciplinary designer from Graz, Austria. I'm really enthusiastic about webdesign and filmmaking. {% endif %}">
 
   <link rel="stylesheet" href="{{ "/css/global.css" | prepend: site.baseurl }}">
