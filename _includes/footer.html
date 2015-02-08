@@ -4,18 +4,6 @@
 
       <div class="footer-col footer-col-2">
         <ul class="social-media-list">
-          {% if site.github_username %}
-          <li>
-            <a target="_blank" href="https://github.com/{{ site.github_username }}">
-              <span class="icon icon--github">
-                <svg viewBox="0 0 16 16">
-                  <use xlink:href="#icon-github" />
-                </svg>
-              </span>
-            </a>
-          </li>
-          {% endif %}
-
           {% if site.twitter_username %}
           <li>
             <a target="_blank" href="https://twitter.com/{{ site.twitter_username }}">
@@ -64,6 +52,18 @@
           </li>
           {% endif %}
 
+          {% if site.github_username %}
+          <li>
+            <a target="_blank" href="https://github.com/{{ site.github_username }}">
+              <span class="icon icon--github">
+                <svg viewBox="0 0 16 16">
+                  <use xlink:href="#icon-github" />
+                </svg>
+              </span>
+            </a>
+          </li>
+          {% endif %}
+
           <li>
             <a href="mailto:{{ site.email }}">
               <span class="icon icon--email">
@@ -79,7 +79,7 @@
 
       <div class="footer-col footer-col-1">
         <ul class="contact-list">
-          <li>&copy; {{ site.time | date: '%Y' }} Stefan Reinprecht. All rights reserved</li>
+          <li>&copy; {{ site.time | date: '%Y' }} Stefan Reinprecht | <a target="_blank" href="{{ site.baseurl }}/impressum">Impressum</a></li>
         </ul>
       </div>
 

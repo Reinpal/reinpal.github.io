@@ -79,11 +79,19 @@
 
 .social-media-list li, .contact-list li {
 	list-style-type: none;
-	color: black(0.4);
+	color: black(.4);
 }
 
 .contact-list li {
 	display: block;
+
+	a {
+		color: black(.4);
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
 
 	@include breakpoint($medium) {
 		text-align: left;

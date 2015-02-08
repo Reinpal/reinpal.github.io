@@ -19,7 +19,7 @@
   z-index: 1000;
   overflow: hidden;
   transform: translate(0,0);
-  transition: transform .4s, height .3s, background .2s;
+  transition: transform .4s, height .3s, background .4s;
 
   @include breakpoint($medium) {
     height: 77px;
@@ -173,7 +173,7 @@
 /* when hidden it goes up */
 nav.nav--is-invisible {
   transform: translate(0,-64px);
-  transition: transform .2s;
+  transition: transform .3s;
   opacity: 0;
 }
 
@@ -182,7 +182,7 @@ nav.nav--is-detached {
   position: fixed;
   background-color: white(.97);
   box-shadow: 0 0 1px black(.15);
-  transition: transform .3s, height .3s, background .2s, opacity .15s;
+  transition: transform .3s, height .3s, background .3s, opacity .3s;
 }
 
 // check again for selector specificity
@@ -202,6 +202,8 @@ nav.nav--is-expanded {
   position: fixed;
   cursor: default;
   background: white(.97);
+  transition: transform .3s, height .3s, background .3s, opacity .3s;
+
 }
 
 /* positions navigation content */
@@ -211,14 +213,14 @@ nav.nav--is-expanded {
   opacity: 0;
   padding-top: 0;
   text-align: center;
-  transition: transform .15s, opacity .15s, height .3s;
+  transition: transform .3, opacity .3, height .3s;
 }
 
 /* shows navigation */
 nav.nav--is-expanded .navigation {
   @include centerer();
   opacity: 1;
-  transition: transform .15s, opacity .15s, height .3s;
+  transition: transform .3, opacity .3, height .3s;
 }
 
 .primary-navigation {
