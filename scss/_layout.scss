@@ -649,6 +649,12 @@ figure.animated:hover p {
 	}
 }
 
+.btn--small {
+	@extend .btn;
+	font-size: .666em;
+	padding: 5px 10px;
+}
+
 .btn--black {
 	color: black(.8);
 	border-color: black(.8);

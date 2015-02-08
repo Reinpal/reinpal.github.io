@@ -113,14 +113,15 @@
       }
     }); 
 
-    var title = document.getElementsByTagName("title")[0].innerHTML;
+    // Show differrent Title when Browser Tab gets switched
+    // var title = document.getElementsByTagName("title")[0].innerHTML;
 
-    $(window).blur(function(){
-      document.title = "Make sure to open this";
-    });
-    $(window).focus(function(){
-      document.title = title;
-    });
+    // $(window).blur(function(){
+    //   document.title = "Make sure to open this";
+    // });
+    // $(window).focus(function(){
+    //   document.title = title;
+    // });
     // use behance API to get portfolio items
     var apiKey = 'ExD8KWmq7c8iVz2UdVbJKP10BZfbN7zC';
     var userID = 'StefanReinprecht';

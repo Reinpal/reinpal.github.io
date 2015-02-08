@@ -16,7 +16,7 @@
         <div class="navigation">
           <ul class="primary-navigation">
             {% for page in site.pages %}
-              {% if page.title %}
+              {% if page.desc %}
               <li>
                 <a class="menu-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
                 <span class="menu-link-desc">{{page.desc}}</span>
