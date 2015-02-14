@@ -222,6 +222,14 @@ body.no_scroll {
 	}
 }
 
+.previous-post, .next-post {
+	width: 100%;
+
+	@include breakpoint($medium) {
+		width: 50%;
+		float: left;
+	}
+}
 
 .related-post-content, .all-projects-content {
 	@include centerer();

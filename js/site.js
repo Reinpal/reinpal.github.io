@@ -122,6 +122,12 @@
     // $(window).focus(function(){
     //   document.title = title;
     // });
+
+    // show dash when no collaborator
+    if ( $('.avatar-list--collaborators').children().length === 0) {
+     $('.avatar-list--collaborators').append('<p>&mdash;</p>');
+    }
+
     // use behance API to get portfolio items
     var apiKey = 'ExD8KWmq7c8iVz2UdVbJKP10BZfbN7zC';
     var userID = 'StefanReinprecht';
