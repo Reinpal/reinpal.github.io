@@ -36,8 +36,8 @@ meta: My name is Stefan Reinprecht and I’m an interdisciplinary designer from 
             <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
           </h2>
           <div class="post-meta">{{ post.date | date: "%b %-d, %Y" }} in <a href="{{ site.baseurl }}/{{ post.categories }}">{{ post.categories }}</a></div>
-          <p>{{ post.excerpt }}</p>
-          <a class="btn--small btn--primary btn--black" target="_blank"href="{{ post.url | prepend: site.baseurl }}">Read more</a>
+          {{ post.excerpt }}
+          <a class="btn--small btn--primary btn--black" target="_blank" href="{{ post.url | prepend: site.baseurl }}">Read more</a>
           
         </article>
         {% endif %}
@@ -73,7 +73,7 @@ meta: My name is Stefan Reinprecht and I’m an interdisciplinary designer from 
             <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
           </h2>
           <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }} in <a href="{{ site.baseurl }}/{{ post.categories }}">{{ post.categories }}</a></span>
-          <p>{{ post.excerpt }}</p>
+          {{ post.excerpt }}
           
         </article>
 
