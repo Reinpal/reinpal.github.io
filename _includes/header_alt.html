@@ -3,7 +3,7 @@
     <nav class="site-nav nav--is-white">
 
       <div class="logo">
-        <a class="site-title" href="{{ site.baseurl }}/"><svg><use xlink:href="#icon-logo_quer_schwarz" /></svg></a>      
+        <a class="site-title" href="{{ site.baseurl }}/"><svg><use xlink:href="#icon-logo_quer_schwarz" /></svg></a>
       </div>
 
       <div class="menu">
@@ -16,7 +16,7 @@
         <div class="navigation">
           <ul class="primary-navigation">
             {% for page in site.pages %}
-              {% if page.title %}
+              {% if page.desc %}
               <li>
                 <a class="menu-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
                 <span class="menu-link-desc">{{page.desc}}</span>
@@ -31,7 +31,7 @@
                 <span class="menu-link-desc">{{ post.title }}</span>
               </li>
               {% endif %}
-            {% endfor %}            
+            {% endfor %}
           </ul>
         </div>
       </div>
