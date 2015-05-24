@@ -23,6 +23,10 @@ body.no_scroll {
   }
 }
 
+iframe {
+	max-width: 100%;
+}
+
 .title-container.title-container--home {
 	@include centerer();
 	margin-left: 0;
@@ -75,6 +79,15 @@ body.no_scroll {
 		z-index: 6;
 		padding: 0.704em;
 		background: white(1);
+
+		& a {
+			text-decoration: none;
+			color: inherit;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
 	}
 
 }
@@ -120,7 +133,7 @@ body.no_scroll {
 
 		&:nth-child(even) {
 			@include span(3 of 6 last);
-		}		
+		}
 	}
 
 
@@ -214,8 +227,8 @@ body.no_scroll {
 .related-post {
 	position: relative;
 	width: 100%;
-	padding-bottom: 42.553191489%; //2.35:1	
-	//padding-bottom: 56.25% //16:9 
+	padding-bottom: 42.553191489%; //2.35:1
+	//padding-bottom: 56.25% //16:9
 
 	@include breakpoint($large) {
 		padding-bottom: span(3 of 12);
@@ -413,7 +426,7 @@ body.no_scroll {
 				float: right;
 			}
 		}
-		
+
 		img {
 			position: relative;
 			display: block;
@@ -421,7 +434,7 @@ body.no_scroll {
 			max-width: 100%;
 			opacity: 1;
 		}
-		
+
 		figcaption {
 			color: white(1);
 			font-size: 1em;
@@ -506,7 +519,7 @@ figure.animated figcaption::before {
     opacity: 0;
     transform: translate3d(0,50%,0);
 }
- 
+
 figure.animated h2 {
     position: absolute;
     top: 50%;
@@ -533,12 +546,12 @@ figure.animated h2 {
     	}
     }
 }
- 
+
 figure.animated figcaption::before,
 figure.animated p {
     transition: opacity 0.35s, transform 0.35s;
 }
- 
+
 figure.animated p {
     position: absolute;
     bottom: 0;
@@ -556,7 +569,7 @@ figure.animated p {
 figure.animated:hover h2:after {
 	opacity: 1;
 }
- 
+
 figure.animated:hover figcaption::before ,
 figure.animated:hover p {
     opacity: 1;
@@ -634,12 +647,12 @@ figure.animated:hover p {
 	display: inline-block;
 	font-size: 0.704em;
 	padding: 5px 10px;
-	border: 2px solid;	
+	border: 2px solid;
 	margin: 0.875em 0;
 
 	@include breakpoint($medium) {
 		padding: 10px 20px;
-	
+
 	}
 
 }

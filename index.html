@@ -2,13 +2,23 @@
 layout: default
 header: black
 meta: My name is Stefan Reinprecht and I’m an interdisciplinary designer from Graz, Austria. I'm really enthusiastic about webdesign and development.
+bg-video-mp4: ../../assets/dist/showreel/video/showreel_website_bg_short.mp4
+bg-video-webm: ../../assets/dist/showreel/video/showreel_website_bg_short.webm
+bg-video-ogg: ../../assets/dist/showreel/video/showreel_website_bg_short.ogg
 ---
 
 <div class="home">
 
-  <section class="post-header">
+  <section class="post-header {% if page.bg-video-mp4 %}post-header--video{% endif %}">
     <header>
-      <div class="cover-image cover-image--home" style="background-image: url(../../assets/dist/general/img/bg_home3-large_x2.jpg);">
+      <div class="cover-image cover-image--home " style="background-image: url(../../assets/dist/general/img/bg_home3-large_x2.jpg);">
+      {% if page.bg-video-webm %}
+        <video autoplay loop poster="{{ page.cover-image-retina }}" class="cover-image--home" >
+          <source src="{{ page.bg-video-webm }}" type="video/webm">
+          <source src="{{ page.bg-video-mp4 }}" type="video/mp4">
+          <source src="{{ page.bg-video-ogg }}" type="video/ogg">
+        </video>
+      {% endif %}
         <div class="title-container title-container--home">
           <div class="signet">
             <svg>
@@ -38,7 +48,7 @@ meta: My name is Stefan Reinprecht and I’m an interdisciplinary designer from 
           <div class="post-meta">{{ post.date | date: "%b %-d, %Y" }} in <a href="{{ site.baseurl }}/{{ post.categories }}">{{ post.categories }}</a></div>
           {{ post.excerpt }}
           <a class="btn--small btn--primary btn--black" target="_blank" href="{{ post.url | prepend: site.baseurl }}">Read more</a>
-          
+
         </article>
         {% endif %}
       {% endfor %}
@@ -49,13 +59,13 @@ meta: My name is Stefan Reinprecht and I’m an interdisciplinary designer from 
         {% if post.featured == false %}
 
         <article class="post">
-          
+
           <h2 class="post-list-header">
             <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
           </h2>
           <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }} in <a href="{{ site.baseurl }}/{{ post.categories }}">{{ post.categories }}</a></span>
           <p>{{ post.excerpt }}</p>
-          
+
         </article>
 
         {% endif %}
@@ -68,13 +78,13 @@ meta: My name is Stefan Reinprecht and I’m an interdisciplinary designer from 
         {% if post.featured == false %}
 
         <article class="post">
-          
+
           <h2 class="post-list-header">
             <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
           </h2>
           <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }} in <a href="{{ site.baseurl }}/{{ post.categories }}">{{ post.categories }}</a></span>
           {{ post.excerpt }}
-          
+
         </article>
 
         {% endif %}
@@ -82,7 +92,7 @@ meta: My name is Stefan Reinprecht and I’m an interdisciplinary designer from 
       </div>
     </div>
 
-<!--     <h1 class="page-heading recent-entries"><span>From Behance</span></h1>
+    <h1 class="page-heading recent-entries"><span><a href="https://www.behance.net/StefanReinprecht/">From Behance</a></span></h1>
     <div id="portfolio" class="grid grid__portfolio">
       <script id="portfolio-template" type="text/x-handlebars-template">
       {% raw %}
@@ -98,7 +108,7 @@ meta: My name is Stefan Reinprecht and I’m an interdisciplinary designer from 
       {{/each}}
       {% endraw %}
       </script>
-    </div> -->
+    </div>
   </section>
-  
+
 </div>

@@ -1,8 +1,8 @@
 # Site settings
 title: Stefan Reinprecht | Interdisciplinary Designer
 email: hello@stefanreinprecht.at
-description: > # The Portfolio-Site of Stefan Reinprecht. 
-  I design and build Websites. 
+description: > # The Portfolio-Site of Stefan Reinprecht.
+  I make Films and Websites.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://stefanreinprecht.at" # the base hostname & protocol for your site
 twitter_username: reinpal
