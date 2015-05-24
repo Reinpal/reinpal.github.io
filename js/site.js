@@ -9,7 +9,7 @@
  		if (!$('nav').hasClass('nav--is-expanded')) {
  			var currentScroll = $(this).scrollTop(), //get current scroll position
  					scrollDiff = Math.abs(currentScroll - previousScroll); //calc how fast user scrolls
- 			
+
  			//if scrolled past menu
  			if (currentScroll > menuOffset) {
  				// if scroll past detach point add class to fix
@@ -97,7 +97,7 @@
  	}
 
  		var anchor = document.querySelectorAll('.menu-icon');
-    
+
     [].forEach.call(anchor, function(anchor){
       var open = false;
       anchor.onclick = function(event){
@@ -111,7 +111,7 @@
           open = false;
         }
       }
-    }); 
+    });
 
     // Show differrent Title when Browser Tab gets switched
     // var title = document.getElementsByTagName("title")[0].innerHTML;
