@@ -21,7 +21,10 @@
 }
 
 .home .post-header--video {
-	height: 0;
+
+	@include breakpoint($large) {
+		height: 0;
+	}
 }
 
 .post-header {
@@ -35,9 +38,12 @@
 }
 
 .post-header--video {
-	height: 0;
-	padding-bottom: 56.25%;
-	max-height: 90vh;
+
+	@include breakpoint($large) {
+		height: 0;
+		padding-bottom: 56.25%;
+		max-height: 90vh;		
+	}
 }
 
 .post-img {

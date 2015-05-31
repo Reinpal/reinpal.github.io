@@ -1,3 +1,22 @@
+ $(function() {
+
+     // onload
+     if(document.body.clientWidth >= 1000) {
+         $('video').attr('autoplay', true);
+         $('video').attr('preload', 'auto');
+     }
+
+     // If you want to autoplay when the window resized wider than 780px
+     // after load, you can add this:
+
+     $(window).resize(function() {
+         if(document.body.clientWidth >= 1000) {
+             $('video').attr('autoplay', true);
+             $('video').attr('preload', 'auto');
+         }
+     });
+ });
+
  jQuery(document).ready(function($) {
  	//NAVBAR SCRIPT from Alex Cican, Teehan & Lax inspired, modified a bit
  	var previousScroll = 0, //previous Scroll position

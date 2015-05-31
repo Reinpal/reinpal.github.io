@@ -113,8 +113,8 @@ iframe {
 
 	@include breakpoint($x-large) {
 		@include span(6 of 12);
-		margin-bottom: 0;
-		padding-bottom: 0;
+		margin-bottom: 1.666em;
+		padding-bottom: 1.666em;
 
 		&:nth-child(even) {
 			@include span(6 of 12 last);

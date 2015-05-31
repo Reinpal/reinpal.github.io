@@ -5,6 +5,7 @@ meta: My name is Stefan Reinprecht and I’m an interdisciplinary designer from 
 bg-video-mp4: ../../assets/dist/showreel/video/showreel_website_bg_short.mp4
 bg-video-webm: ../../assets/dist/showreel/video/showreel_website_bg_short.webm
 bg-video-ogg: ../../assets/dist/showreel/video/showreel_website_bg_short.ogg
+permalink: /404.html
 ---
 
 <div class="home">
@@ -13,7 +14,7 @@ bg-video-ogg: ../../assets/dist/showreel/video/showreel_website_bg_short.ogg
     <header>
       <div class="cover-image cover-image--home " style="background-image: url(../../assets/dist/general/img/bg_home4-large.png);">
       {% if page.bg-video-webm %}
-        <video preload="none" loop poster="{{ page.cover-image-retina }}" class="cover-image--home" >
+        <video autoplay loop poster="{{ page.cover-image-retina }}" class="cover-image--home" >
           <source src="{{ page.bg-video-webm }}" type="video/webm">
           <source src="{{ page.bg-video-mp4 }}" type="video/mp4">
           <source src="{{ page.bg-video-ogg }}" type="video/ogg">
@@ -25,19 +26,20 @@ bg-video-ogg: ../../assets/dist/showreel/video/showreel_website_bg_short.ogg
               <use xlink:href="#icon-logo_square_schwarz" />
             </svg>
           </div>
-          <h1 class="intro">{{ site.description }}</h1>
+          <h1 class="intro">Oops! Seems like there's nothing here.</h1>
         </div>
       </div>
     </header>
   </section>
 
   <section class="home-content">
-    <p>Hello! My name is Stefan Reinprecht and I'm an interdisciplinary designer from Graz, Austria. If you're interested in my work, make sure to read the <a target="_blank" href="{{ site.baseurl }}/work">Case Studies</a>. I recently started to write down some important aspects of my work, you cand find them on <a href="{{ site.baseurl }}/blog">my blog</a>. If you want to know more about me <a target="_blank" href="{{ site.baseurl }}/about">click here</a>. </p>
+    <p>Were you looking for some of <a target="_blank" href="{{ site.baseurl }}/work">my work</a>?  Or something from <a target="_blank" href="{{ site.baseurl }}/blog">the blog</a>? If not, you should probably go back to the <a target="_blank" href="{{ site.baseurl }}">Home-Page</a>.</p>
+
     <h1 class="page-heading recent-entries"><span>Case Studies</span></h1>
 
     <div class="post-list">
       <div class="featured-posts">
-      {% for post in site.categories['work'] %}
+      {% for post in site.categories['work'] limit:4 %}
         {% if post.featured == true %}
 
         <article class="featured-post">
@@ -53,28 +55,11 @@ bg-video-ogg: ../../assets/dist/showreel/video/showreel_website_bg_short.ogg
         {% endif %}
       {% endfor %}
       </div>
-      <!-- <h1 class="page-heading recent-entries"><span>From the Blog</span></h1>
-      <div class="recent-posts">
-      {% for post in site.categories['work'] limit:2 %}
-        {% if post.featured == false %}
 
-        <article class="post">
-
-          <h2 class="post-list-header">
-            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-          </h2>
-          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }} in <a href="{{ site.baseurl }}/{{ post.categories }}">{{ post.categories }}</a></span>
-          <p>{{ post.excerpt }}</p>
-
-        </article>
-
-        {% endif %}
-      {% endfor %}
-      </div> -->
 
       <h1 class="page-heading recent-entries"><span>Recent Work</span></h1>
       <div class="recent-posts">
-      {% for post in site.categories['work'] %}
+      {% for post in site.categories['work'] limit:3 %}
         {% if post.featured == false %}
 
         <article class="post">
@@ -92,23 +77,10 @@ bg-video-ogg: ../../assets/dist/showreel/video/showreel_website_bg_short.ogg
       </div>
     </div>
 
-    <h1 class="page-heading recent-entries"><span><a href="https://www.behance.net/StefanReinprecht/">From Behance</a></span></h1>
-    <div id="portfolio" class="grid grid__portfolio">
-      <script id="portfolio-template" type="text/x-handlebars-template">
-      {% raw %}
-      {{#each projects}}
-        <figure class="portfolio-grid-item animated">
-          <a class="portfolio-item-link" href="{{this.url}}" target="_blank">
-          <img src="{{this.covers.[404]}}" alt="{{this.name}}" >
-          <figcaption>
-              <p>{{this.name}}</p>
-          </figcaption>
-          </a>
-        </figure>
-      {{/each}}
-      {% endraw %}
-      </script>
-    </div>
   </section>
+  <div class="post-follow-ups">
+    {% include CTA-email.html %}
+<!--    {% include all-projects.html %} -->
+  </div>
 
 </div>
