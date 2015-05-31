@@ -366,9 +366,9 @@ iframe {
 		height: 45vh;
 	}
 
-		@include breakpoint($large) {
-		width: span(33.333333%);
-		height: 90vh;
+	@include breakpoint($large) {
+		width: span(25%);
+		height: 80vh;
 	}
 }
 
