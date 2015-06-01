@@ -11,9 +11,9 @@ bg-video-ogg: ../../assets/dist/showreel/video/showreel_website_bg_short.ogg
 
   <section class="post-header {% if page.bg-video-mp4 %}post-header--video{% endif %}">
     <header>
-      <div class="cover-image cover-image--home " style="background-image: url(../../assets/dist/general/img/bg_home4-large.png);">
+      <div class="cover-image cover-image--home" style="background-image: url(../../assets/dist/general/img/bg_home4-large.png);">
       {% if page.bg-video-webm %}
-        <video preload="none" loop poster="{{ page.cover-image-retina }}" class="cover-image--home" >
+        <video preload="none" loop poster="../../assets/dist/general/img/bg_home4-large.png" class="cover-image--home" >
           <source src="{{ page.bg-video-webm }}" type="video/webm">
           <source src="{{ page.bg-video-mp4 }}" type="video/mp4">
           <source src="{{ page.bg-video-ogg }}" type="video/ogg">

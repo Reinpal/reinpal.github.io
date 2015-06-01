@@ -42,7 +42,7 @@
 	@include breakpoint($large) {
 		height: 0;
 		padding-bottom: 56.25%;
-		max-height: 90vh;		
+		max-height: 90vh;
 	}
 }
 
@@ -356,6 +356,11 @@ margin-bottom: gutter(4);
 .avatar-image--collaborator {
 	width: 30px;
 	height: 30px;
+}
+
+.post-content {
+	ul { margin: 0; padding: 0;}
+	ul li {margin-right: 1em;}
 }
 
 /*------------------------------------*\

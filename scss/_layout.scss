@@ -41,7 +41,11 @@ iframe {
 	}
 
 	@include breakpoint($large) {
-		width: span(6 of 12);
+		width: span(8 of 12);
+	}
+
+	@include breakpoint($x-large) {
+		width: span(7 of 12);
 	}
 
 }
