@@ -12,13 +12,13 @@
         </a>
       </div>
 
-      <div class="site-width">
+      <nav class="site-width">
         <div class="navigation">
           <ul class="primary-navigation">
             {% for page in site.pages %}
               {% if page.desc %}
               <li>
-                <a class="menu-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+                <a class="menu-link" title="{{ page.title }}" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
                 <span class="menu-link-desc">{{page.desc}}</span>
               </li>
               {% endif %}
@@ -27,14 +27,14 @@
             {% for post in site.categories['work'] limit:4 %}
               {% if post.featured == true %}
               <li>
-                <a class="menu-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.client }}</a>
+                <a class="menu-link" title="{{ page.title }}" href="{{ post.url | prepend: site.baseurl }}">{{ post.client }}</a>
                 <span class="menu-link-desc">{{ post.title }}</span>
               </li>
               {% endif %}
             {% endfor %}
           </ul>
         </div>
-      </div>
+      </nav>
 
     </nav>
 

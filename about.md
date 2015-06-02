@@ -3,7 +3,7 @@ layout: about
 title: About
 my-name: Stefan Reinprecht
 desc: Find out more about myself
-meta: My name is Stefan Reinprecht and I’m an interdisciplinary designer from Graz, Austria. I'm really enthusiastic about webdesign and development.
+meta: Hello! My name is Stefan Reinprecht and I am an interdisciplinary designer from Graz, Austria. I am really enthusiastic about webdesign and filmmaking.
 job-desc: Interdisciplinary Designer
 permalink: /about/
 avatar: "../../assets/dist/general/img/avatar-small.jpg"

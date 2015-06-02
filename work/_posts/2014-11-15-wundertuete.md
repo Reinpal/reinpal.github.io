@@ -4,7 +4,8 @@ title: Logo and Website for a unique and playful Design Agency
 client: Wundertuete
 date: 2014-11-20 23:27:00
 permalink: /work/wundertuete
-tags: 
+meta: At FH Joanneum one of the main objectives during the 4th semester is to found a &#x201C;virtual&#x201C; Design-Agency.
+tags:
 - logo
 - webdesign
 - branding
@@ -16,7 +17,7 @@ cover-image-retina: ../../assets/dist/wundertuete/img/wundertuete_business_cards
 
 At FH Joanneum one of the main objectives during the 4th semester is to found a &#x201C;virtual&#x201C; Design-Agency. To do so we gathered up in small groups and began thinking about the rough direction in which we wanted to head.
 
-The initial team-building session went pretty quickly as we all already knew with whom we wanted to work with. Our team consisted of 6 people, namely Barbara Gundl, Jakob Listabarth, Lukas Kollmann, Thomas Mirnig, Felix Pichler (Make sure to check out their portfolios too!) and myself. As our skill-set was very wide we decided to focus on Corporate- and Webdesign. We all knew our strengths , so it was kind of a no-brainer to decide who was responsible for what. 
+The initial team-building session went pretty quickly as we all already knew with whom we wanted to work with. Our team consisted of 6 people, namely Barbara Gundl, Jakob Listabarth, Lukas Kollmann, Thomas Mirnig, Felix Pichler (Make sure to check out their portfolios too!) and myself. As our skill-set was very wide we decided to focus on Corporate- and Webdesign. We all knew our strengths , so it was kind of a no-brainer to decide who was responsible for what.
 
 ### First things first
 
@@ -46,13 +47,13 @@ We chose two shades of blue for our main colors, appropriately named Wunderblau 
 
 <img src="../../assets/dist/wundertuete/img/wundertuete_logo_schowcase.png" alt="The logo in its different colors" class="post-img" srcset="../../assets/dist/wundertuete/img/wundertuete_logo_schowcase-small.png 250w, ../../assets/dist/wundertuete/img/wundertuete_logo_schowcase-medium.png 500w, ../../assets/dist/wundertuete/img/wundertuete_logo_schowcase-large.png 700w" sizes="(min-width: 31.25em) 66vw, (min-width: 56.25em) 50vw, 100vw">
 
-We also developed a striped pattern to serve as a background for some of our stationary e.g. Business Cards and Letterhead. 
+We also developed a striped pattern to serve as a background for some of our stationary e.g. Business Cards and Letterhead.
 <figure>
     <img src="../../assets/dist/wundertuete/img/wundertuete_stationary_1.jpg" alt="Stationary Design" class="post-img" srcset="../../assets/dist/wundertuete/img/wundertuete_stationary_1-small.jpg 250w, ../../assets/dist/wundertuete/img/wundertuete_stationary_1-medium.jpg 500w, ../../assets/dist/wundertuete/img/wundertuete_stationary_1-large.jpg 700w" sizes="(min-width: 31.25em) 66vw, (min-width: 56.25em) 50vw, 100vw">
     <figcaption>Our stationary design showing the contrast between a clean and playful design</figcaption>
 </figure>
 
-Confetti was chosen to accompany our fun nature and to loosen up the contrasts created by the clean type and the calm colors. 
+Confetti was chosen to accompany our fun nature and to loosen up the contrasts created by the clean type and the calm colors.
 
 <img src="../../assets/dist/wundertuete/img/wundertuete_letterhead_mockup.jpg" alt="Our Letterhead" class="post-img" srcset="../../assets/dist/wundertuete/img/wundertuete_letterhead_mockup-small.jpg 250w, ../../assets/dist/wundertuete/img/wundertuete_letterhead_mockup-medium.jpg 500w, ../../assets/dist/wundertuete/img/wundertuete_letterhead_mockup-large.jpg 700w" sizes="(min-width: 31.25em) 66vw, (min-width: 56.25em) 50vw, 100vw">
 
@@ -62,11 +63,11 @@ After we had all settled for our Corporate Design it was much easier to put toge
 
 <img src="../../assets/dist/wundertuete/img/wundertuete_website_mockup.jpg" alt="Mockup of our Website" class="post-img" srcset="../../assets/dist/wundertuete/img/wundertuete_website_mockup-small.jpg 250w, ../../assets/dist/wundertuete/img/wundertuete_website_mockup-medium.jpg 500w, ../../assets/dist/wundertuete/img/wundertuete_website_mockup-large.jpg 700w" sizes="(min-width: 31.25em) 66vw, (min-width: 56.25em) 50vw, 100vw">
 
-We used Wordpress as a Content Management System and decided to build a responsive and retina-ready Site. The use of large images and minimal typography set focus on the content and by putting everything onto one page we eliminated the need for unnecessary hierarchical elements. You can see the site [live right here](http://diewundertuete.at). 
+We used Wordpress as a Content Management System and decided to build a responsive and retina-ready Site. The use of large images and minimal typography set focus on the content and by putting everything onto one page we eliminated the need for unnecessary hierarchical elements. You can see the site [live right here](http://diewundertuete.at).
 
 ### The Project
 
-The biggest project on which we were working during the semester was a website for the creative co-working space Sechserhaus in Graz. You can check out the live [Website right here](http://sechserhaus.net) and/or read a [more detailed case study]({{ site.baseurl }}/work/sechserhaus) about the creation process. 
+The biggest project on which we were working during the semester was a website for the creative co-working space Sechserhaus in Graz. You can check out the live [Website right here](http://sechserhaus.net) and/or read a [more detailed case study]({{ site.baseurl }}/work/sechserhaus) about the creation process.
 
 ### Summing up
 
