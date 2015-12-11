@@ -39,7 +39,7 @@ permalink: /404.html
 
     <div class="post-list">
       <div class="featured-posts">
-      {% for post in site.categories['work'] limit:4 %}
+      {% for post in site.categories['Work'] limit:4 %}
         {% if post.featured == true %}
 
         <article class="featured-post">
@@ -59,7 +59,7 @@ permalink: /404.html
 
       <h1 class="page-heading recent-entries"><span>Recent Work</span></h1>
       <div class="recent-posts">
-      {% for post in site.categories['work'] limit:3 %}
+      {% for post in site.categories['Work'] limit:3 %}
         {% if post.featured == false %}
 
         <article class="post">
