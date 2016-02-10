@@ -128,6 +128,16 @@
 	}
 }
 
+.cover-image--Glavassevich {
+	&:before {
+		background: linear-gradient(135deg, rgba(#3B4369, .9) 0%, rgba(#3B4369, .9) 100%);
+	}
+
+	&:after {
+		background: white(0);
+	}
+}
+
 .cover-image--personal {
 	&:before {
 		background: linear-gradient(to bottom, black(0) 0%, black(0.1) 25%, black(0.5) 100%);

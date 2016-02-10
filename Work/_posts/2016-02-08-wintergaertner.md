@@ -10,43 +10,43 @@ tags:
 - webdevelopment
 type: Webdesign
 featured: true
-cover-image: ../../assets/dist/corporate_identity/img/macbook-1-large.jpg
-cover-image-retina: ../../assets/dist/corporate_identity/img/macbook-1-large_x2.jpg
+cover-image: ../../assets/dist/glavassevich/img/Mockup-imac-landingpage-large.png
+cover-image-retina: ../../assets/dist/glavassevich/img/Mockup-imac-landingpage-large_x2.png
 ---
 
-Working on your own Corporate Identity seems like a dauting task in the beginning, mainly because you have to face yourself with some hard (read: interesting) questions.
+In 2015 <a href="http://www.lukaskollmann.at" target="_blank">Lukas Kollmann</a> and I were asked to be part of a huge redesign of a local wintergarden-construction company named <a href="http://www.wintergaertner.at" target="_blank">Glavassevich</a> which was done by <a href="http://ipu.at" target="_blank">I-Punkt</a> and <a href="http://cargocollective.com/nebulabor/" target="_blank">Nebulabor</a>. Our part was to redesign their whole digital identity. Our findings and design would then be incorporated into the corporate identity and vice versa.
 
-### Brand Development
+### The Brand
 
-<img class="post-img" src="../../assets/dist/corporate_identity/img/logo_quer_schwarz_print.png" alt="website on iphone 5" srcset="../../assets/dist/corporate_identity/img/logo_quer_schwarz_print-small.png 250w, ../../assets/dist/corporate_identity/img/logo_quer_schwarz_print-medium.png 500w, ../../assets/dist/corporate_identity/img/logo_quer_schwarz_print-large.png 700w" sizes="(min-width: 31.25em) 66vw, (min-width: 56.25em) 50vw, 100vw">
+<img class="post-img" src="../../assets/dist/glavassevich/img/Mockup-imac-landingpage-large.png" alt="website on imac" srcset="../../assets/dist/glavassevich/img/Mockup-imac-landingpage-small.png 250w, ../../assets/dist/glavassevich/img/Mockup-imac-landingpage-medium.png 500w, ../../assets/dist/glavassevich/img/Mockup-imac-landingpage-large.png 700w" sizes="(min-width: 31.25em) 66vw, (min-width: 56.25em) 50vw, 100vw">
 
-For example :
+The main goal for the new website was, to attract clients and make it easy for them to contact the company. We accomplished that by making very minimal contact-forms and clear Call-To-Action Elements throughout the site.
 
-- Will my message come across to prospective clients/the target audience?
-- Does the branding reflect myself as a designer? Is it too personal?
-- Where do I want to position myself as a designer?
+Conceptually the new site works on two separate layers. One would be a showcase of their current projects and another would be background info on how they are working and some tips if you are planning to have a wintergarden built for you.
 
-The hard part here clearly is the admitetly schizophrenic situation in which you&apos;ll find yourself. You basically are designer and client combined. Which definitely is a quite unusual situation. But along with the hard parts come some merits. Mainly the quick feedback loops you&apos;ll find yourself in. Besides the typical question you&apos;ll ask yourself while working on a design, the client part in you can give instant feedback on your decisions.
+<img class="post-img" src="../../assets/dist/glavassevich/img/mockup-ipad-durchblicken.png" alt="website on macbook screen" srcset="../../assets/dist/glavassevich/img/mockup-ipad-durchblicken-small.png 250w, ../../assets/dist/glavassevich/img/mockup-ipad-durchblicken-medium.png 500w, ../../assets/dist/glavassevich/img/mockup-ipad-durchblicken-large.png 700w" sizes="(min-width: 31.25em) 66vw, (min-width: 56.25em) 50vw, 100vw">
 
-&gt;Beware, you may even find yourself in a situation where you tell yourself to make the logo bigger.
+### Images
 
-These quick feedback loops make it possible to work out various design directions easily and then you are able to dive deep into the decision-making process resulting in your final design.
+Biggest design element were the huge architectural images of their current projects. We tried to use them whereever possible to evoke an immediate emotional response from the user.
 
-<img class="post-img" src="../../assets/dist/corporate_identity/img/macbook-1.jpg" alt="website on macbook screen" srcset="../../assets/dist/corporate_identity/img/macbook-1-small.jpg 250w, ../../assets/dist/corporate_identity/img/macbook-1-medium.jpg 500w, ../../assets/dist/corporate_identity/img/macbook-1-large.jpg 700w" sizes="(min-width: 31.25em) 66vw, (min-width: 56.25em) 50vw, 100vw">
+Combine these larges images with clever copy and you get an effective Call-To-Action right at the beginning of every page.
 
-### Colors (or lack thereof) and Typography
+### The Contest
 
-For my personal Identity I decided to stick with black and white. I knew from the beginning that I didn&apos;t want any color associated with my &quot;brand&quot;. This was a purely personal decision, as I could see myself wanting to change the color every two weeks because I wasn&apos;t completely satisified with it.
+A bonus feature of the site is a sort of contest for the users. If they find 20 of the hidden Glavassevich-Logos throught the showcase they will be prompted with a form to participate for a big prize. With some clever use of Cookies and SessionStorage we were able to pull this feature off in a way that it can be reused whenever the client wants to have a contest. 
 
-Concerning typography I went with a sans-serif, serif combination. Proxima Nova is used as my main font used in the Logo and Headlines and Freight Text is used for body copy. The geometric yet slightly personal character of Proxima Nova were the main factors behind the decision to use the font.
+<img class="post-img" src="../../assets/dist/glavassevich/img/mockup-iphone-besichtigen-detail.png" alt="website on iphone 5" srcset="../../assets/dist/glavassevich/img/mockup-iphone-besichtigen-detail-small.png 250w, ../../assets/dist/glavassevich/img/mockup-iphone-besichtigen-detail-medium.png 500w, ../../assets/dist/glavassevich/img/mockup-iphone-besichtigen-detail-large.png 700w" sizes="(min-width: 31.25em) 66vw, (min-width: 56.25em) 50vw, 100vw">
 
-### The Website
+### Development
 
-Along with the Corporate Design came the portfolio website (the site you&apos;re currently on, if you didn&apos;t noticed by now). It was the first test for the Corporate Identity I developed for myself. Is the Logo applicable on the web (size and resolution)? Is the type legibile? These questions and more were asked during the design and development phase.
+The whole site is based on a custom Wordpress-Theme which makes it wildly extendable by nature. Future Feature requests can be implemented in a timely manner. With Wordpress as a CMS the client can also easily manage almost every tiny bit of the website. Our focus was to make it very simple for the client to maintain their content on the website as well as to provide a sleek and usable frontend for the visitors of the site.
 
-<img class="post-img" src="../../assets/dist/corporate_identity/img/iPhone5s.jpg" alt="website on iphone 5" srcset="../../assets/dist/corporate_identity/img/iPhone5s-small.jpg 250w, ../../assets/dist/corporate_identity/img/iPhone5s-medium.jpg 500w, ../../assets/dist/corporate_identity/img/iPhone5s-large.jpg 700w" sizes="(min-width: 31.25em) 66vw, (min-width: 56.25em) 50vw, 100vw">
+Together with <a href="http://wukonig.com" target="_blank">SEO-Expert J&#xF6;rg Wukonig</a> we set up some Goals in Google Analytics to gather some data on how the site is used. For the future we are ready to react on our users behaviour accordingly.
 
-Talking about development, I decided to use Jekyll as a &quot;CMS&quot;. With Jekyll I am able to manage my content easy and without any database structure behind the site which enabled me to keep it lightweight and thus very performant. Performance was a big factor and I constantly asked myself how fast would the site would load if I added this or removed that. I will explain the development details in a separate blog post for those of you who are interested.
+<img class="post-img" src="../../assets/dist/glavassevich/img/mockup-macbook-durchblicken.png" alt="website on iphone 5" srcset="../../assets/dist/glavassevich/img/mockup-macbook-durchblicken-small.png 250w, ../../assets/dist/glavassevich/img/mockup-macbook-durchblicken-medium.png 500w, ../../assets/dist/glavassevich/img/mockup-macbook-durchblicken-large.png 700w" sizes="(min-width: 31.25em) 66vw, (min-width: 56.25em) 50vw, 100vw">
 
-Of course, if you&apos;re your own client you&apos;ll never be finished or completely satisfied with your work but you have to draw a line at some point and take a stand for what you designed. Always keep in mind of how you would work with an external client. Summing up, my Corporate Design turned out to be quite versatile and I&apos;m really happy with the results I got when applying it to stationary as well as my website.
+All in all it was a really big project with lots of tiny facets to think of. We&apos;re really happy with the results so far and it starts to reflect on the data as well. The redesign of Glavassevich was one of the biggest projects I&apos;ve been part of and I&apos;m happy that I took on this challenge.
+
+<a href="http://www.wintergaertner.at" target="_blank">Check out the website</a> and let me know what you think!
 

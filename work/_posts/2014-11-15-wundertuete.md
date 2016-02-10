@@ -10,7 +10,7 @@ tags:
 - webdesign
 - branding
 type: Logo, Webdesign
-featured: true
+featured: false
 cover-image: ../../assets/dist/wundertuete/img/wundertuete_business_cards_rain-large.jpg
 cover-image-retina: ../../assets/dist/wundertuete/img/wundertuete_business_cards_rain-large_x2.jpg
 ---
