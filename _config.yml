@@ -12,7 +12,7 @@ vimeo_username:  stefanreinprecht
 facebook_username:  stefan.reinprecht
 youtube_username: stefanreinprecht
 
-highlighter: pygments
+highlighter: rouge
 
 defaults:
   -
